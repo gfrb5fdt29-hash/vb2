@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vb2026-next10-pwa-v2';
+const CACHE_NAME = 'vb2026-next10-pwa-v3';
 const APP_SHELL = [
   './',
   './index.html',

@@ -1,7 +1,7 @@
 {
-  "name": "VB 2026 predikciók",
-  "short_name": "VB tippek",
-  "description": "Minimalista, magyar nyelvű, iPhone-ra optimalizált PWA a VB 2026 legjobb 32 predikciókhoz.",
+  "name": "VB 2026",
+  "short_name": "VB 2026",
+  "description": "Minimalista, magyar nyelvű, iPhone-ra optimalizált PWA a VB 2026 playoff meccseihez.",
   "lang": "hu",
   "start_url": "./",
   "scope": "./",

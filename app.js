@@ -24,9 +24,6 @@
     matchesView: document.getElementById('matchesView'),
     riskView: document.getElementById('riskView'),
     navButtons: Array.from(document.querySelectorAll('.nav-button')),
-    methodCard: document.getElementById('methodCard'),
-    methodToggle: document.getElementById('methodToggle'),
-    methodContent: document.getElementById('methodContent'),
     overlay: document.getElementById('sheetOverlay'),
     sheet: document.getElementById('matchSheet'),
     sheetClose: document.getElementById('sheetClose'),
@@ -220,7 +217,6 @@
   function renderAll() {
     renderMatches();
     renderRiskView();
-    renderMethod();
   }
 
   function renderMatches() {
@@ -258,21 +254,46 @@
 
   function renderRiskView() {
     const panels = [
-      { title: 'Hosszabbítás esélye', items: getRiskSorted('extra').slice(0, 5), getValue: (m) => labelledPct('Esély', m?.predictions?.extra_time_chance_pct) },
-      { title: 'Büntetők esélye', items: getRiskSorted('penalties').slice(0, 5), getValue: (m) => labelledPct('Esély', m?.predictions?.penalties_chance_pct) },
-      { title: 'Váratlan kimenetel esélye', items: getRiskSorted('upset').slice(0, 5), getValue: (m) => labelledPct('Kockázat', m?.pwa?.sort_scores?.upset_risk_score) },
-      { title: 'Alacsonyabb predikciós esély', items: getLowestConfidence().slice(0, 5), getValue: (m) => labelledPct('Összesen', m?.confidence?.overall_prediction_pct) }
+      {
+        title: 'Döntetlen esélye',
+        items: getRiskSorted('draw').slice(0, 5),
+        getValue: (m) => Number(m?.predictions?.extra_time_chance_pct || 0),
+        valueLabel: (m) => labelledPct('Esély', m?.predictions?.extra_time_chance_pct),
+        reason: (m) => `A JSON alapján itt magasabb a rendes játékidős döntetlen kockázata.`
+      },
+      {
+        title: 'Váratlan kimenetel esélye',
+        items: getRiskSorted('upset').slice(0, 5),
+        getValue: (m) => Number(m?.pwa?.sort_scores?.upset_risk_score || 0),
+        valueLabel: (m) => labelledPct('Kockázat', m?.pwa?.sort_scores?.upset_risk_score),
+        reason: (m) => shortRiskReason(m?.unexpected_tip?.tip || 'A váratlan tipp ennél a meccsnél erősebb kilengést jelez.')
+      },
+      {
+        title: 'Alacsonyabb predikciós esély',
+        items: getLowestConfidence().slice(0, 5),
+        getValue: (m) => Math.max(0, 100 - Number(m?.confidence?.overall_prediction_pct || 0)),
+        valueLabel: (m) => labelledPct('Összesített esély', m?.confidence?.overall_prediction_pct),
+        reason: (m) => 'Az összesített esély alacsonyabb, ezért a fő tipp kevésbé stabil.'
+      }
     ];
 
     els.riskGrid.innerHTML = panels.map((panel) => `
       <article class="risk-panel">
         <h3>${escapeHtml(panel.title)}</h3>
-        ${panel.items.map((match) => `
-          <button class="risk-item" type="button" data-match-id="${escapeHtml(match.match_id)}" aria-label="${escapeHtml(displayTitle(match))} részletei">
-            <span><strong>${escapeHtml(displayTitle(match))}</strong><br>${escapeHtml(formatHungaryDate(match?.fixture?.kickoff_hungary))}</span>
-            <span class="badge">${escapeHtml(panel.getValue(match))}</span>
-          </button>
-        `).join('')}
+        ${panel.items.map((match) => {
+          const value = Math.max(0, Math.min(100, Number(panel.getValue(match) || 0)));
+          return `
+            <button class="risk-item risk-item-large" type="button" data-match-id="${escapeHtml(match.match_id)}" aria-label="${escapeHtml(displayTitle(match))} részletei">
+              <span class="risk-main">
+                <span class="risk-title">${escapeHtml(displayTitle(match))}</span>
+                <span class="risk-time">${escapeHtml(formatHungaryDate(match?.fixture?.kickoff_hungary))}</span>
+                <span class="risk-note">${escapeHtml(panel.reason(match))}</span>
+                <span class="risk-meter" aria-hidden="true"><span style="width:${value}%"></span></span>
+              </span>
+              <span class="badge">${escapeHtml(panel.valueLabel(match))}</span>
+            </button>
+          `;
+        }).join('')}
       </article>
     `).join('');
 
@@ -281,26 +302,20 @@
     });
   }
 
+  function shortRiskReason(value) {
+    const text = safe(value);
+    if (text === FALLBACK) return 'A JSON váratlan forgatókönyvet is jelez ennél a meccsnél.';
+    const compact = text.replace(/\.$/, '');
+    return compact.length > 92 ? `${compact.slice(0, 89).trim()}…` : compact;
+  }
+
   function getRiskSorted(type) {
-    const key = type === 'extra' ? 'extra_time_risk_score' : type === 'penalties' ? 'penalties_risk_score' : 'upset_risk_score';
+    const key = type === 'draw' ? 'extra_time_risk_score' : 'upset_risk_score';
     return [...state.matches].sort((a, b) => Number(b?.pwa?.sort_scores?.[key] || 0) - Number(a?.pwa?.sort_scores?.[key] || 0));
   }
 
   function getLowestConfidence() {
     return [...state.matches].sort((a, b) => Number(a?.confidence?.overall_prediction_pct || 999) - Number(b?.confidence?.overall_prediction_pct || 999));
-  }
-
-  function renderMethod() {
-    const methodology = state.bundle?.methodology || {};
-    const source = state.bundle?.source_policy || {};
-    const factors = Array.isArray(methodology.weighted_factors) ? methodology.weighted_factors : [];
-    els.methodCard.hidden = false;
-    els.methodContent.innerHTML = `
-      <p>${escapeHtml(safe(methodology.confidence_scale_note, 'A százalékok predikciós esélyszintek.'))}</p>
-      <p><strong>Forrás:</strong> ${escapeHtml(safe(source.source_file || source.source_file_uploaded_name))}</p>
-      <p><strong>Külső adat:</strong> ${source.internet_used ? 'igen' : 'nem'} · <strong>Szorzó:</strong> ${source.external_odds_used ? 'igen' : 'nem'}</p>
-      ${factors.length ? `<ul>${factors.slice(0, 8).map((item) => `<li>${escapeHtml(safe(item))}</li>`).join('')}</ul>` : ''}
-    `;
   }
 
   function openMatch(matchId) {
@@ -525,12 +540,6 @@
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && !els.sheet.hidden) closeSheet();
   });
-  els.methodToggle.addEventListener('click', () => {
-    const expanded = els.methodToggle.getAttribute('aria-expanded') === 'true';
-    els.methodToggle.setAttribute('aria-expanded', String(!expanded));
-    els.methodContent.hidden = expanded;
-  });
-
   setupSheetGestures();
   loadData();
 })();

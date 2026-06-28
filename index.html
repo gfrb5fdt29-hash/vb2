@@ -7,9 +7,9 @@
   <meta name="color-scheme" content="dark">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="VB predikciók">
-  <meta name="description" content="VB 2026 predikciós PWA – magyar, offline, iPhone-ra optimalizált.">
-  <title>VB 2026 predikciók</title>
+  <meta name="apple-mobile-web-app-title" content="VB 2026">
+  <meta name="description" content="VB 2026 playoff PWA – magyar, offline, iPhone-ra optimalizált.">
+  <title>VB 2026</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
   <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
@@ -22,11 +22,11 @@
       <div class="brand-row">
         <img class="brand-icon" src="./assets/icon.svg" width="40" height="40" alt="">
         <div>
-          <p class="eyebrow">Legjobb 32</p>
-          <h1 id="appTitle">VB 2026 predikciók</h1>
+          <p class="eyebrow">Playoff</p>
+          <h1 id="appTitle">VB 2026</h1>
         </div>
       </div>
-      <p class="subtitle">Következő 10 meccs – minimalista áttekintő</p>
+      <p class="subtitle">Minden egyenes kieséses meccs szerdától szombatig</p>
     </header>
 
     <section class="view is-active" id="matchesView" aria-label="Meccsek">
@@ -42,14 +42,6 @@
         <article class="match-card skeleton-card"></article>
         <article class="match-card skeleton-card"></article>
       </section>
-
-      <section class="method-card" id="methodCard" hidden>
-        <button class="method-toggle" type="button" id="methodToggle" aria-expanded="false">
-          <span>Módszer</span>
-          <span class="chevron" aria-hidden="true">⌄</span>
-        </button>
-        <div class="method-content" id="methodContent" hidden></div>
-      </section>
     </section>
 
     <section class="view" id="riskView" aria-label="Kockázat">
@@ -57,7 +49,7 @@
         <div>
           <p class="eyebrow">Áttekintés</p>
           <h2>Kockázat</h2>
-          <p>Hosszabbítás, büntetők, váratlan kimenetel és alacsonyabb predikciós esély.</p>
+          <p>Döntetlenkockázat, váratlan kimenetel és alacsonyabb predikciós esély.</p>
         </div>
       </section>
       <div class="risk-grid" id="riskGrid"></div>

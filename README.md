@@ -1,10 +1,17 @@
-# VB 2026 predikciók – minimalista iPhone PWA
+# VB 2026 – Playoff minimalista iPhone PWA
 
-Ez egy statikus, magyar nyelvű, iPhone-ra optimalizált PWA a FIFA World Cup 2026 legjobb 32 közötti következő 10 meccsének predikciós áttekintéséhez.
+Ez egy statikus, magyar nyelvű, iPhone-ra optimalizált PWA a FIFA World Cup 2026 playoff meccseinek áttekintéséhez.
 
 ## Frissített változat
 
 Ebben a verzióban:
+
+- a fejlécben „Playoff” és „VB 2026” szerepel;
+- az alcím: „Minden egyenes kieséses meccs szerdától szombatig”;
+- a főoldali Módszer blokk törölve lett;
+- a Kockázat nézetből kikerült a büntetők része;
+- a „Hosszabbítás esélye” helyett „Döntetlen esélye” látható;
+- a kockázati sávok nagyobbak, rövid indoklással jelennek meg;
 
 - a részletes kártya X gombbal, háttérre koppintással és lefele legyintéssel is bezárható;
 - az országnevek magyar névvel jelennek meg az appban;
