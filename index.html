@@ -3,77 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#08090d">
+  <meta name="theme-color" content="#050505">
   <meta name="color-scheme" content="dark">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="VB 2026">
-  <meta name="description" content="VB 2026 playoff PWA – magyar, offline, iPhone-ra optimalizált.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
   <title>VB 2026</title>
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
-  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-  <noscript>Az app használatához JavaScript szükséges.</noscript>
-  <main class="phone-shell" id="appShell">
-    <header class="app-header" aria-labelledby="appTitle">
-      <div class="brand-row">
-        <img class="brand-icon" src="./assets/icon.svg" width="40" height="40" alt="">
-        <div>
-          <p class="eyebrow">Playoff</p>
-          <h1 id="appTitle">VB 2026</h1>
-        </div>
-      </div>
-      <p class="subtitle">Minden egyenes kieséses meccs szerdától szombatig</p>
-    </header>
-
-    <section class="view is-active" id="matchesView" aria-label="Meccsek">
-      <section class="section-head">
-        <div>
-          <h2>Meccsek</h2>
-          <p>Időrendben.</p>
-        </div>
+  <div class="app-shell">
+    <main id="app" class="app" aria-live="polite">
+      <section class="loading-card">
+        <span class="orb"></span>
+        <p>App betöltése…</p>
       </section>
+    </main>
 
-      <section class="match-list" id="matchList" aria-live="polite">
-        <article class="match-card skeleton-card"></article>
-        <article class="match-card skeleton-card"></article>
-        <article class="match-card skeleton-card"></article>
-      </section>
-    </section>
+    <nav class="bottom-nav" aria-label="Alsó navigáció">
+      <button class="nav-btn active" type="button" data-view="matches" aria-label="Meccsek nézet">Meccsek</button>
+      <button class="nav-btn" type="button" data-view="rank" aria-label="Rangsor nézet">Rangsor</button>
+      <button class="nav-btn" type="button" data-view="info" aria-label="Infó nézet">Infó</button>
+    </nav>
+  </div>
 
-    <section class="view" id="riskView" aria-label="Kockázat">
-      <section class="section-head risk-head">
-        <div>
-          <p class="eyebrow">Áttekintés</p>
-          <h2>Kockázat</h2>
-          <p>Döntetlenkockázat, váratlan kimenetel és alacsonyabb predikciós esély.</p>
-        </div>
-      </section>
-      <div class="risk-grid" id="riskGrid"></div>
-    </section>
-  </main>
-
-  <nav class="bottom-nav" aria-label="Alsó navigáció">
-    <button class="nav-button is-active" type="button" data-view="matches" aria-current="page">
-      <span class="nav-dot" aria-hidden="true"></span>
-      <span>Meccsek</span>
-    </button>
-    <button class="nav-button" type="button" data-view="risk">
-      <span class="nav-dot" aria-hidden="true"></span>
-      <span>Kockázat</span>
-    </button>
-  </nav>
-
-  <div class="sheet-overlay" id="sheetOverlay" hidden></div>
-  <aside class="bottom-sheet" id="matchSheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
-    <div class="sheet-handle" aria-hidden="true"></div>
-    <button class="sheet-close" id="sheetClose" type="button" aria-label="Részletes nézet bezárása">×</button>
-    <div class="sheet-content" id="sheetContent" tabindex="-1"></div>
-  </aside>
-
-  <script src="./app.js" defer></script>
+  <script src="./assets/app.js" defer></script>
 </body>
 </html>
