@@ -1,0 +1,26 @@
+{
+  "name": "VB 2026 predikciók",
+  "short_name": "VB tippek",
+  "description": "Minimalista, magyar nyelvű, iPhone-ra optimalizált PWA a VB 2026 Round of 32 predikciókhoz.",
+  "lang": "hu",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05060a",
+  "theme_color": "#08090d",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

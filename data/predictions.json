@@ -1,0 +1,4365 @@
+{
+  "schema_version": "pwa_prediction_bundle_v1",
+  "language": "hu",
+  "artifact_type": "round_of_32_prediction_json",
+  "source_policy": {
+    "source_file": "vb2026_round32_next10_historical_calculation_ready_v06.json",
+    "source_file_uploaded_name": "vb2026_round32_next10_historical_calculation_ready_v06(2).json",
+    "internet_used": false,
+    "external_odds_used": false,
+    "missing_data_filled_by_assumption": false,
+    "prediction_type": "adatvezérelt történeti valószínűségi predikció",
+    "not_betting_advice": true
+  },
+  "generated_for": "PWA építéshez strukturált, részletes predikciós adatforrás",
+  "generated_at_context": "2026-06-29 Europe/Budapest",
+  "tournament": "FIFA World Cup 2026",
+  "stage": "Round of 32",
+  "layer": "prediction_layer_from_historical_calculation_ready_no_odds",
+  "input_file_check": {
+    "matches_completed": 10,
+    "matches_expected": 10,
+    "matches_count_in_array": 10,
+    "matches_completed_equals_expected": true,
+    "all_10_matches_present": true,
+    "overall_status": "ok_10_of_10"
+  },
+  "methodology": {
+    "weighted_factors": [
+      "csoportkörös teljesítmény",
+      "last20 forma",
+      "rúgott és kapott góltrend",
+      "clean sheet / failed to score / BTTS / over-under mintázat",
+      "Elo és FIFA-rang, ha elérhető",
+      "H2H, ha van, régi H2H óvatosan kezelve",
+      "pihenőnap és helyszín",
+      "csak JSON-ban szereplő megerősített eltiltások"
+    ],
+    "evidence_separation": {
+      "directly_readable_from_json": "Nyers vagy közvetlenül kiszámolt JSON-mezőkből átvett adat.",
+      "calculated_conclusions": "A JSON statisztikáiból összekapcsolt predikciós irány.",
+      "cautious_estimates": "Olyan százalékos vagy meccsképi becslés, amely nem külön nyers adat, hanem óvatos predikció."
+    },
+    "confidence_scale_note": "A százalékok nem objektív valószínűségek és nem oddsok; óvatos, összehasonlító predikciós bizalmi szintek."
+  },
+  "matches": [
+    {
+      "match_id": "r32_m01_mex_ecu",
+      "match_no_chronological": 1,
+      "title": "Mexico vs Ecuador",
+      "teams": {
+        "team_a": {
+          "id": "MEX",
+          "name": "Mexico"
+        },
+        "team_b": {
+          "id": "ECU",
+          "name": "Ecuador"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 79,
+        "date": "2026-06-30",
+        "kickoff_local": "2026-06-30 19:00 America/Mexico_City",
+        "kickoff_hungary": "2026-07-01 03:00 Europe/Budapest",
+        "venue": "Mexico City Stadium / Estadio Azteca",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "rest_days": {
+          "team_a": 6,
+          "team_b": 5,
+          "rest_advantage": "Mexico +1 nap (naptári nap alapján; pontos óraszám a korábbi meccsek helyi kezdési idejétől függően frissítendő)"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Mexico",
+            "elo": 1912,
+            "elo_rank": 12,
+            "fifa_rank": 14,
+            "fifa_points": 1687.48
+          },
+          "team_b": {
+            "team": "Ecuador",
+            "elo": 1902,
+            "elo_rank": 15,
+            "fifa_rank": 23,
+            "fifa_points": 1598.52
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 10,
+            "fifa_rank_difference_team_a_minus_team_b": -9
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Mexico",
+            "team_id": "MEX",
+            "team_name_display": "Mexico",
+            "group": "A",
+            "position": 1,
+            "played": 3,
+            "w": 3,
+            "d": 0,
+            "l": 0,
+            "gf": 6,
+            "ga": 0,
+            "gd": 6,
+            "points": 9,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "3-0-0",
+              "w": 3,
+              "d": 0,
+              "l": 0,
+              "gf": 6,
+              "ga": 0,
+              "gd": 6,
+              "goals_per_game": 2.0,
+              "conceded_per_game": 0.0,
+              "clean_sheet_pct": 100.0,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 0.0,
+              "over15_pct": 66.7,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Ecuador",
+            "team_id": "ECU",
+            "team_name_display": "Ecuador",
+            "group": "E",
+            "position": 3,
+            "played": 3,
+            "w": 1,
+            "d": 1,
+            "l": 1,
+            "gf": 2,
+            "ga": 2,
+            "gd": 0,
+            "points": 4,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-1-1",
+              "w": 1,
+              "d": 1,
+              "l": 1,
+              "gf": 2,
+              "ga": 2,
+              "gd": 0,
+              "goals_per_game": 0.667,
+              "conceded_per_game": 0.667,
+              "clean_sheet_pct": 33.3,
+              "failed_to_score_pct": 66.7,
+              "btts_pct": 33.3,
+              "over15_pct": 33.3,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": "Összesített csoportköri xG/lövés/labdabirtoklás/szöglet/sárga/piros mezők: nincs egységesen kiolvasható publikus aggregált adat; kiválasztott meccs-statok részlegesen elérhetők."
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Mexico",
+            "team_id": "MEX",
+            "team_name_display": "Mexico",
+            "last5": "5-0-0",
+            "last10": "8-2-0",
+            "last20": "12-6-2",
+            "goals_per_game": 1.5,
+            "conceded_per_game": 0.6,
+            "clean_sheet_pct": 65.0,
+            "btts_pct": 30.0,
+            "over25_pct": 35.0,
+            "under25_pct": 65.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Ecuador",
+            "team_id": "ECU",
+            "team_name_display": "Ecuador",
+            "last5": "3-1-1",
+            "last10": "4-5-1",
+            "last20": "8-11-1",
+            "goals_per_game": 1.05,
+            "conceded_per_game": 0.4,
+            "clean_sheet_pct": 60.0,
+            "btts_pct": 35.0,
+            "over25_pct": 25.0,
+            "under25_pct": 75.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 14,
+            "draws": 8,
+            "team_b_wins": 4,
+            "team_a_goals": 40,
+            "team_b_goals": 25,
+            "team_a": "Mexico",
+            "team_b": "Ecuador",
+            "summary_basis": "National Football Teams detailed list, regular-time scoreline, penalties ignored.",
+            "source_discrepancy": "FOX snippet: 25 previous, Mexico 14, Ecuador 4, draws 7; Worldfootball.net snippet: 27 matches, Mexico 15, Ecuador 4, draws 8, goals 46:26. Detailed NTF list used as primary, discrepancy retained."
+          },
+          "h2h_detail_level": "full_match_list",
+          "h2h_summary_total_count": 26,
+          "h2h_matches_listed_count": 26,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "A H2H lista és a summary darabszáma egyezik; közvetlenül számolható."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "részleges: párosítás/meccsszám/helyszín/kezdés több forrásból ellenőrizve, de FIFA Match Centre extrakcióban UTC/helyi idő eltérés szerepelt",
+          "ratings": "részleges: Elo és FIFA-rang elérhető; 6/12 havi Elo-trend nem teljesen kiolvasható",
+          "group_stage": "részleges: alapállás és eredmények megvannak; aggregált haladó statok hiányosak",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "részleges/többforrásos eltérés: részletes NTF-lista alapján számolva, eltérő összesítés jelölve",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": []
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Mexico csoportforma: 3-0-0, 6-0 gól, 9 pont.",
+          "Ecuador csoportforma: 1-1-1, 2-2 gól, 4 pont.",
+          "Mexico last20: 12-6-2, 1.5 rúgott / 0.6 kapott gól/meccs.",
+          "Ecuador last20: 8-11-1, 1.05 rúgott / 0.4 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 10.",
+          "FIFA-rang különbség team_a - team_b: -9.",
+          "Pihenő: Mexico 6 nap, Ecuador 5 nap; Mexico +1 nap (naptári nap alapján; pontos óraszám a korábbi meccsek helyi kezdési idejétől függően frissítendő).",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Under 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Nem; számítási alap: Mexico BTTS last20 30.0%, Ecuador BTTS last20 35.0%.",
+          "Védekezési irány: Mexico clean sheet group 100.0%, last20 65.0%; Ecuador clean sheet group 33.3%, last20 60.0%.",
+          "1X2 alapirány: Mexico győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 24%.",
+          "Büntetők esélye óvatos becslés: 11%.",
+          "Pontos eredmény bizalom óvatos becslés: 21%.",
+          "Összesített predikciós bizalom óvatos becslés: 57%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Mexico: 3-0-0, 6-0; Ecuador: 1-1-1, 2-2",
+        "last20_form": "Mexico: 12-6-2; Ecuador: 8-11-1",
+        "goal_trend": "Under 2.5",
+        "defensive_trend": "Mexico CS last20 65.0%; Ecuador CS last20 60.0%",
+        "elo_fifa_edge": "Elo diff: 10; FIFA rank diff: -9",
+        "h2h_direction": {
+          "team_a_wins": 14,
+          "draws": 8,
+          "team_b_wins": 4,
+          "team_a_goals": 40,
+          "team_b_goals": 25,
+          "team_a": "Mexico",
+          "team_b": "Ecuador",
+          "summary_basis": "National Football Teams detailed list, regular-time scoreline, penalties ignored.",
+          "source_discrepancy": "FOX snippet: 25 previous, Mexico 14, Ecuador 4, draws 7; Worldfootball.net snippet: 27 matches, Mexico 15, Ecuador 4, draws 8, goals 46:26. Detailed NTF list used as primary, discrepancy retained."
+        },
+        "rest_location": "Mexico +1 nap (naptári nap alapján; pontos óraszám a korábbi meccsek helyi kezdési idejétől függően frissítendő)",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Mexico sokkal jobb csoportkört hozott: 3 győzelem, 0 kapott gól. A számított kép szerint Mexico stabilabb alaphelyzetből indul, de Ecuador last20 védekezése nagyon erős, ezért nem várható könnyű, nyílt meccs. A történeti H2H Mexico felé húz, de a frissebb egymás elleni meccsek inkább döntetlenes, alacsony gólos veszélyt mutatnak. Mexico kezdhet dominánsabban, Ecuador pedig mélyebb, kontrolláltabb meccset próbálhat játszani. A döntő különbség Mexico jobb csoportformája, hazai környezete és H2H fölénye lehet. A meccs közbeni fordulási kockázat inkább Mexicónál van, mert Ecuador kevés gólt kap, de sok döntetlent játszik.",
+        "likely_stronger_start": "Mexico",
+        "expected_match_openness": "zártabb / kontrolláltabb",
+        "decisive_factor_summary": "A döntő különbség Mexico jobb csoportformája, hazai környezete és H2H fölénye lehet",
+        "in_game_turnaround_risk": "közepes"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "Mexico győzelem",
+          "confidence_pct": 62
+        },
+        "safe_direction": {
+          "pick": "Mexico nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Mexico vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Mexico"
+        },
+        "btts": {
+          "pick": "Nem",
+          "lean": "inkább nem"
+        },
+        "total_2_5": {
+          "pick": "Under 2.5"
+        },
+        "qualifier": {
+          "pick": "Mexico"
+        },
+        "extra_time_chance_pct": 24,
+        "penalties_chance_pct": 11
+      },
+      "correct_score_tips": [
+        {
+          "score": "1-0",
+          "winner": "Mexico",
+          "logic_type": "alapforgatókönyv",
+          "reason": "Mexico clean sheet sorához és Ecuador underes last20 profiljához illeszkedik."
+        },
+        {
+          "score": "2-0",
+          "winner": "Mexico",
+          "logic_type": "reális alternatíva",
+          "reason": "Mexico csoportkörös támadóhatékonyságát veszi erősebben figyelembe, de továbbra is Ecuador gól nélküli kimenetével számol."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Ecuador rendes játékidőben döntetlenre menti a meccset.",
+        "why_unexpected": "Mexico szinte minden fő mutatóban enyhe vagy közepes előnyben van.",
+        "why_defensible": "Ecuador last20 mérlege 8-11-1, vagyis nagyon sok döntetlen; kapott gólátlaga csak 0.40.",
+        "risk_level": "közepes",
+        "confidence_pct": 23
+      },
+      "confidence": {
+        "base_outcome_pct": 62,
+        "goals_markets_pct": 65,
+        "correct_score_pct": 21,
+        "unexpected_tip_pct": 23,
+        "overall_prediction_pct": 57
+      },
+      "risks": [
+        "Ecuador védekezési adatai nagyon erősek.",
+        "A H2H régebbi része nem túlértékelhető.",
+        "Frissebb H2H-ben több döntetlen van.",
+        "A teljes hivatalos fegyelmi lista nem teljesen kiolvasható."
+      ],
+      "pwa": {
+        "tags": [
+          "under_2_5_candidate",
+          "btts_no_candidate",
+          "home_context_edge",
+          "medium_confidence",
+          "draw_risk"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Mexico győzelem",
+            "confidence_pct": 62
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Under 2.5",
+            "confidence_pct": 65
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "1-0 / 2-0",
+            "confidence_pct": 21
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Ecuador rendes játékidőben döntetlenre menti a meccset.",
+            "risk_level": "közepes",
+            "confidence_pct": 23
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 62,
+          "goals_confidence": 65,
+          "upset_risk_score": 13,
+          "extra_time_risk_score": 24,
+          "penalties_risk_score": 11
+        }
+      }
+    },
+    {
+      "match_id": "r32_m02_eng_cod",
+      "match_no_chronological": 2,
+      "title": "England vs DR Congo",
+      "teams": {
+        "team_a": {
+          "id": "ENG",
+          "name": "England"
+        },
+        "team_b": {
+          "id": "COD",
+          "name": "DR Congo"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 80,
+        "date": "2026-07-01",
+        "kickoff_local": "2026-07-01 12:00 America/New_York",
+        "kickoff_hungary": "2026-07-01 18:00 Europe/Budapest",
+        "venue": "Atlanta Stadium / Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "rest_days": {
+          "team_a": 4,
+          "team_b": 4,
+          "rest_advantage": "nincs számottevő naptári pihenőnap-előny"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "England",
+            "elo": 2038,
+            "elo_rank": 4,
+            "fifa_rank": 4,
+            "fifa_points": 1828.02
+          },
+          "team_b": {
+            "team": "DR Congo",
+            "elo": 1712,
+            "elo_rank": 43,
+            "fifa_rank": 46,
+            "fifa_points": 1474.43
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 326,
+            "fifa_rank_difference_team_a_minus_team_b": -42
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "England",
+            "team_id": "ENG",
+            "team_name_display": "England",
+            "group": "L",
+            "position": 1,
+            "played": 3,
+            "w": 2,
+            "d": 1,
+            "l": 0,
+            "gf": 6,
+            "ga": 2,
+            "gd": 4,
+            "points": 7,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "2-1-0",
+              "w": 2,
+              "d": 1,
+              "l": 0,
+              "gf": 6,
+              "ga": 2,
+              "gd": 4,
+              "goals_per_game": 2.0,
+              "conceded_per_game": 0.667,
+              "clean_sheet_pct": 66.7,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 33.3,
+              "over15_pct": 66.7,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "DR Congo",
+            "team_id": "COD",
+            "team_name_display": "DR Congo",
+            "group": "K",
+            "position": 3,
+            "played": 3,
+            "w": 1,
+            "d": 1,
+            "l": 1,
+            "gf": 4,
+            "ga": 3,
+            "gd": 1,
+            "points": 4,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-1-1",
+              "w": 1,
+              "d": 1,
+              "l": 1,
+              "gf": 4,
+              "ga": 3,
+              "gd": 1,
+              "goals_per_game": 1.333,
+              "conceded_per_game": 1.0,
+              "clean_sheet_pct": 0.0,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 66.7,
+              "over15_pct": 66.7,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "England",
+            "team_id": "ENG",
+            "team_name_display": "England",
+            "last5": "4-1-0",
+            "last10": "7-2-1",
+            "last20": "16-2-2",
+            "goals_per_game": 2.4,
+            "conceded_per_game": 0.4,
+            "clean_sheet_pct": 75.0,
+            "btts_pct": 20.0,
+            "over25_pct": 50.0,
+            "under25_pct": 50.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "DR Congo",
+            "team_id": "COD",
+            "team_name_display": "DR Congo",
+            "last5": "1-2-2",
+            "last10": "4-3-3",
+            "last20": "12-3-5",
+            "goals_per_game": 1.4,
+            "conceded_per_game": 0.75,
+            "clean_sheet_pct": 50.0,
+            "btts_pct": 40.0,
+            "over25_pct": 30.0,
+            "under25_pct": 70.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 0,
+            "draws": 0,
+            "team_b_wins": 0,
+            "team_a_goals": 0,
+            "team_b_goals": 0,
+            "note": "WorldFootball.net World Cup H2H szerint nincs korábbi vb-meccs; teljes válogatott H2H archívum ellenőrizendő"
+          },
+          "h2h_detail_level": "no_world_cup_h2h_found_full_archive_unverified",
+          "h2h_summary_total_count": 0,
+          "h2h_matches_listed_count": 0,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "A fájl csak azt támasztja alá, hogy VB H2H nincs; teljes A-válogatott H2H nincs lezárva."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "részleges: párosítás/meccsszám/helyszín/kezdés FIFA/Sofascore/Ticketmaster keresztellenőrzéssel; stadiontípus nem gépileg kiolvasható",
+          "ratings": "részleges: Elo és FIFA-rang elérhető; 6/12 havi Elo-trend csak részleges/forrásdátum ellenőrizendő",
+          "group_stage": "részleges: alapállás és eredmények megvannak; haladó statok csak ahol publikus snippet/forrás elérhető",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "részleges: elérhető H2H-források alapján jelölve; teljes archívum ellenőrizendő",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": [
+          {
+            "field": "head_to_head.full_detail_for_calculation",
+            "status": "no_world_cup_h2h_found_full_archive_unverified",
+            "reason": "A későbbi historikus számításnál a H2H használható, de nem teljes részletes meccslistaként."
+          }
+        ]
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "England csoportforma: 2-1-0, 6-2 gól, 7 pont.",
+          "DR Congo csoportforma: 1-1-1, 4-3 gól, 4 pont.",
+          "England last20: 16-2-2, 2.4 rúgott / 0.4 kapott gól/meccs.",
+          "DR Congo last20: 12-3-5, 1.4 rúgott / 0.75 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 326.",
+          "FIFA-rang különbség team_a - team_b: -42.",
+          "Pihenő: England 4 nap, DR Congo 4 nap; nincs számottevő naptári pihenőnap-előny.",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Under 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Nem; számítási alap: England BTTS last20 20.0%, DR Congo BTTS last20 40.0%.",
+          "Védekezési irány: England clean sheet group 66.7%, last20 75.0%; DR Congo clean sheet group 0.0%, last20 50.0%.",
+          "1X2 alapirány: England győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 14%.",
+          "Büntetők esélye óvatos becslés: 6%.",
+          "Pontos eredmény bizalom óvatos becslés: 24%.",
+          "Összesített predikciós bizalom óvatos becslés: 69%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "England: 2-1-0, 6-2; DR Congo: 1-1-1, 4-3",
+        "last20_form": "England: 16-2-2; DR Congo: 12-3-5",
+        "goal_trend": "Under 2.5",
+        "defensive_trend": "England CS last20 75.0%; DR Congo CS last20 50.0%",
+        "elo_fifa_edge": "Elo diff: 326; FIFA rank diff: -42",
+        "h2h_direction": {
+          "team_a_wins": 0,
+          "draws": 0,
+          "team_b_wins": 0,
+          "team_a_goals": 0,
+          "team_b_goals": 0,
+          "note": "WorldFootball.net World Cup H2H szerint nincs korábbi vb-meccs; teljes válogatott H2H archívum ellenőrizendő"
+        },
+        "rest_location": "nincs számottevő naptári pihenőnap-előny",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "England egyértelmű erősségi fölényben van Elo, FIFA-rang és last20 forma alapján. A számított kép szerint England kontrollált, területfölényes meccsképe valószínűbb, nem feltétlenül kaotikus gólváltás. DR Congo last20 mutatója nem rossz, ezért nem teljesen veszélytelen ellenfél. England inkább türelmesen nyomhat, és a meccs második részében nyílhat ki jobban a különbség. A döntő faktor England védekezési stabilitása és nagy minőségi fölénye lehet. A meccs közbeni fordulási kockázat DR Congónál nagyobb, mert hátrányban nehezebben kontrollálhatja a tempót.",
+        "likely_stronger_start": "England",
+        "expected_match_openness": "zártabb / kontrolláltabb",
+        "decisive_factor_summary": "A döntő faktor England védekezési stabilitása és nagy minőségi fölénye lehet",
+        "in_game_turnaround_risk": "alacsony-közepes"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "England győzelem",
+          "confidence_pct": 78
+        },
+        "safe_direction": {
+          "pick": "England nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "England vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "England"
+        },
+        "btts": {
+          "pick": "Nem",
+          "lean": "inkább nem"
+        },
+        "total_2_5": {
+          "pick": "Under 2.5",
+          "lean": "enyhe"
+        },
+        "qualifier": {
+          "pick": "England"
+        },
+        "extra_time_chance_pct": 14,
+        "penalties_chance_pct": 6
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-0",
+          "winner": "England",
+          "logic_type": "alapforgatókönyv",
+          "reason": "England erős támadóátlaga és 75%-os last20 clean sheet mutatója ezt támogatja."
+        },
+        {
+          "score": "1-0",
+          "winner": "England",
+          "logic_type": "reális alternatíva",
+          "reason": "DR Congo underes last20 mintája és korrekt védekezési mutatói miatt reális a szűkebb különbség."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Félidőben döntetlen, végül England győzelem.",
+        "why_unexpected": "Az erősségi különbség alapján sokkal simább England-fölény is elképzelhető.",
+        "why_defensible": "DR Congo last20 under 2.5 aránya 70%, England csoportban is 66.7% under 2.5 mintát hozott.",
+        "risk_level": "közepes",
+        "confidence_pct": 20
+      },
+      "confidence": {
+        "base_outcome_pct": 78,
+        "goals_markets_pct": 62,
+        "correct_score_pct": 24,
+        "unexpected_tip_pct": 20,
+        "overall_prediction_pct": 69
+      },
+      "risks": [
+        "H2H gyakorlatilag nem használható.",
+        "DR Congo last20 mérlege nem gyenge.",
+        "Ha England korán nem szerez gólt, underes, szűk meccs alakulhat ki."
+      ],
+      "pwa": {
+        "tags": [
+          "stable_favorite",
+          "under_2_5_candidate",
+          "btts_no_candidate",
+          "high_confidence"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "England győzelem",
+            "confidence_pct": 78
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Under 2.5",
+            "confidence_pct": 62
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-0 / 1-0",
+            "confidence_pct": 24
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Félidőben döntetlen, végül England győzelem.",
+            "risk_level": "közepes",
+            "confidence_pct": 20
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 78,
+          "goals_confidence": 62,
+          "upset_risk_score": 10,
+          "extra_time_risk_score": 14,
+          "penalties_risk_score": 6
+        }
+      }
+    },
+    {
+      "match_id": "r32_m03_bel_sen",
+      "match_no_chronological": 3,
+      "title": "Belgium vs Senegal",
+      "teams": {
+        "team_a": {
+          "id": "BEL",
+          "name": "Belgium"
+        },
+        "team_b": {
+          "id": "SEN",
+          "name": "Senegal"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 82,
+        "date": "2026-07-01",
+        "kickoff_local": "2026-07-01 13:00 America/Los_Angeles",
+        "kickoff_hungary": "2026-07-01 22:00 Europe/Budapest",
+        "venue": "Seattle Stadium / Lumen Field",
+        "city": "Seattle",
+        "country": "USA",
+        "rest_days": {
+          "team_a": 5,
+          "team_b": 5,
+          "rest_advantage": "nincs számottevő naptári pihenőnap-előny"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Belgium",
+            "elo": 1884,
+            "elo_rank": 16,
+            "fifa_rank": 9,
+            "fifa_points": 1742.24
+          },
+          "team_b": {
+            "team": "Senegal",
+            "elo": 1842,
+            "elo_rank": 21,
+            "fifa_rank": 15,
+            "fifa_points": 1684.07
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 42,
+            "fifa_rank_difference_team_a_minus_team_b": -6
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Belgium",
+            "team_id": "BEL",
+            "team_name_display": "Belgium",
+            "group": "G",
+            "position": 1,
+            "played": 3,
+            "w": 1,
+            "d": 2,
+            "l": 0,
+            "gf": 6,
+            "ga": 2,
+            "gd": 4,
+            "points": 5,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-2-0",
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 6,
+              "ga": 2,
+              "gd": 4,
+              "goals_per_game": 2.0,
+              "conceded_per_game": 0.667,
+              "clean_sheet_pct": 33.3,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 66.7,
+              "over15_pct": 66.7,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Senegal",
+            "team_id": "SEN",
+            "team_name_display": "Senegal",
+            "group": "I",
+            "position": 3,
+            "played": 3,
+            "w": 1,
+            "d": 0,
+            "l": 2,
+            "gf": 8,
+            "ga": 6,
+            "gd": 2,
+            "points": 3,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-0-2",
+              "w": 1,
+              "d": 0,
+              "l": 2,
+              "gf": 8,
+              "ga": 6,
+              "gd": 2,
+              "goals_per_game": 2.667,
+              "conceded_per_game": 2.0,
+              "clean_sheet_pct": 33.3,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 66.7,
+              "over15_pct": 100.0,
+              "over25_pct": 100.0,
+              "under25_pct": 0.0,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Belgium",
+            "team_id": "BEL",
+            "team_name_display": "Belgium",
+            "last5": "3-2-0",
+            "last10": "6-4-0",
+            "last20": "10-6-4",
+            "goals_per_game": 2.65,
+            "conceded_per_game": 0.95,
+            "clean_sheet_pct": 40.0,
+            "btts_pct": 50.0,
+            "over25_pct": 55.0,
+            "under25_pct": 45.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Senegal",
+            "team_id": "SEN",
+            "team_name_display": "Senegal",
+            "last5": "1-1-3",
+            "last10": "5-1-4",
+            "last20": "13-2-5",
+            "goals_per_game": 2.1,
+            "conceded_per_game": 1.0,
+            "clean_sheet_pct": 50.0,
+            "btts_pct": 40.0,
+            "over25_pct": 60.0,
+            "under25_pct": 40.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 0,
+            "draws": 0,
+            "team_b_wins": 0,
+            "team_a_goals": 0,
+            "team_b_goals": 0,
+            "note": "WorldFootball.net World Cup H2H szerint nincs korábbi vb-meccs; teljes válogatott H2H archívum ellenőrizendő"
+          },
+          "h2h_detail_level": "no_world_cup_h2h_found_full_archive_unverified",
+          "h2h_summary_total_count": 0,
+          "h2h_matches_listed_count": 0,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "A fájl csak azt támasztja alá, hogy VB H2H nincs; teljes A-válogatott H2H nincs lezárva."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "részleges: párosítás/meccsszám/helyszín/kezdés FIFA/Sofascore/Sky/Reuters keresztellenőrzéssel; stadiontípus részleges",
+          "ratings": "részleges: Elo és FIFA-rang elérhető; 6/12 havi Elo-trend csak részleges/forrásdátum ellenőrizendő",
+          "group_stage": "részleges: alapállás és eredmények megvannak; haladó statok csak ahol publikus snippet/forrás elérhető",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "részleges: elérhető H2H-források alapján jelölve; teljes archívum ellenőrizendő",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": [
+          {
+            "field": "head_to_head.full_detail_for_calculation",
+            "status": "no_world_cup_h2h_found_full_archive_unverified",
+            "reason": "A későbbi historikus számításnál a H2H használható, de nem teljes részletes meccslistaként."
+          }
+        ]
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Belgium csoportforma: 1-2-0, 6-2 gól, 5 pont.",
+          "Senegal csoportforma: 1-0-2, 8-6 gól, 3 pont.",
+          "Belgium last20: 10-6-4, 2.65 rúgott / 0.95 kapott gól/meccs.",
+          "Senegal last20: 13-2-5, 2.1 rúgott / 1.0 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 42.",
+          "FIFA-rang különbség team_a - team_b: -6.",
+          "Pihenő: Belgium 5 nap, Senegal 5 nap; nincs számottevő naptári pihenőnap-előny.",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Over 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Igen; számítási alap: Belgium BTTS last20 50.0%, Senegal BTTS last20 40.0%.",
+          "Védekezési irány: Belgium clean sheet group 33.3%, last20 40.0%; Senegal clean sheet group 33.3%, last20 50.0%.",
+          "1X2 alapirány: Belgium győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 24%.",
+          "Büntetők esélye óvatos becslés: 10%.",
+          "Pontos eredmény bizalom óvatos becslés: 17%.",
+          "Összesített predikciós bizalom óvatos becslés: 51%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Belgium: 1-2-0, 6-2; Senegal: 1-0-2, 8-6",
+        "last20_form": "Belgium: 10-6-4; Senegal: 13-2-5",
+        "goal_trend": "Over 2.5",
+        "defensive_trend": "Belgium CS last20 40.0%; Senegal CS last20 50.0%",
+        "elo_fifa_edge": "Elo diff: 42; FIFA rank diff: -6",
+        "h2h_direction": {
+          "team_a_wins": 0,
+          "draws": 0,
+          "team_b_wins": 0,
+          "team_a_goals": 0,
+          "team_b_goals": 0,
+          "note": "WorldFootball.net World Cup H2H szerint nincs korábbi vb-meccs; teljes válogatott H2H archívum ellenőrizendő"
+        },
+        "rest_location": "nincs számottevő naptári pihenőnap-előny",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Belgium stabilabb csoportkört hozott, vereség nélkül jutott tovább. Senegal góltermelése erős, de a csoportban sokat is kapott, ami nyíltabb meccsképet jelez. Ez az egyik erősebb BTTS / over jellegű párosítás. Belgium Elo- és FIFA-előnye csak mérsékelt, ezért nem tekinthető teljesen stabil favoritnak. Belgium labdával kontrolláltabb lehet, Senegal viszont átmenetekből veszélyes. A fordulási kockázat Belgium oldalán is jelen van, mert Senegal támadóadatai nem underdog-szerűek.",
+        "likely_stronger_start": "Belgium",
+        "expected_match_openness": "nyíltabb / gólváltásos",
+        "decisive_factor_summary": "Belgium labdával kontrolláltabb lehet, Senegal viszont átmenetekből veszélyes",
+        "in_game_turnaround_risk": "magas"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "Belgium győzelem",
+          "lean": "nem erős",
+          "confidence_pct": 56
+        },
+        "safe_direction": {
+          "pick": "Belgium nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Belgium vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Belgium"
+        },
+        "btts": {
+          "pick": "Igen"
+        },
+        "total_2_5": {
+          "pick": "Over 2.5"
+        },
+        "qualifier": {
+          "pick": "Belgium"
+        },
+        "extra_time_chance_pct": 24,
+        "penalties_chance_pct": 10
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-1",
+          "winner": "Belgium",
+          "logic_type": "alapforgatókönyv",
+          "reason": "Belgium enyhe erősségi előnye és mindkét csapat góltrendje ezt támogatja."
+        },
+        {
+          "score": "1-1",
+          "winner": null,
+          "logic_type": "reális alternatíva",
+          "reason": "Senegal támadóereje és Belgium döntetlenes csoportmintája miatt reális alternatíva a hosszabbításos meccskép."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Senegal rendes játékidőben nem kap ki.",
+        "why_unexpected": "Belgium Elo/FIFA és csoportstabilitás alapján favorit.",
+        "why_defensible": "Senegal last20-ban 13 győzelmet hozott, 2.10 gólt rúg meccsenként, és a csoportban 8 gólt szerzett.",
+        "risk_level": "közepes-magas",
+        "confidence_pct": 26
+      },
+      "confidence": {
+        "base_outcome_pct": 56,
+        "goals_markets_pct": 58,
+        "correct_score_pct": 17,
+        "unexpected_tip_pct": 26,
+        "overall_prediction_pct": 51
+      },
+      "risks": [
+        "H2H nem használható erősen.",
+        "Senegal csoportadata egyszerre támadóerős és védekezésben sérülékeny.",
+        "Belgium sok döntetlennel jött, ezért a sima 1X2 győzelem nem túl stabil."
+      ],
+      "pwa": {
+        "tags": [
+          "over_2_5_candidate",
+          "btts_yes_candidate",
+          "upset_risk",
+          "low_medium_confidence"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Belgium győzelem",
+            "confidence_pct": 56
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Over 2.5",
+            "confidence_pct": 58
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-1 / 1-1",
+            "confidence_pct": 17
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Senegal rendes játékidőben nem kap ki.",
+            "risk_level": "közepes-magas",
+            "confidence_pct": 26
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 56,
+          "goals_confidence": 58,
+          "upset_risk_score": 44,
+          "extra_time_risk_score": 24,
+          "penalties_risk_score": 10
+        }
+      }
+    },
+    {
+      "match_id": "r32_m04_usa_bih",
+      "match_no_chronological": 4,
+      "title": "United States vs Bosnia and Herzegovina",
+      "teams": {
+        "team_a": {
+          "id": "USA",
+          "name": "United States"
+        },
+        "team_b": {
+          "id": "BIH",
+          "name": "Bosnia and Herzegovina"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 81,
+        "date": "2026-07-01",
+        "kickoff_local": "2026-07-01 17:00 America/Los_Angeles",
+        "kickoff_hungary": "2026-07-02 02:00 Europe/Budapest",
+        "venue": "San Francisco Bay Area Stadium / Levi's Stadium",
+        "city": "Santa Clara / San Francisco Bay Area",
+        "country": "USA",
+        "rest_days": {
+          "team_a": 6,
+          "team_b": 7,
+          "rest_advantage": "Bosnia and Herzegovina +1 naptári nap"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "United States",
+            "elo": 1781,
+            "elo_rank": 27,
+            "fifa_rank": 17,
+            "fifa_points": 1671.23
+          },
+          "team_b": {
+            "team": "Bosnia and Herzegovina",
+            "elo": 1596,
+            "elo_rank": 65,
+            "fifa_rank": 64,
+            "fifa_points": null
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 185,
+            "fifa_rank_difference_team_a_minus_team_b": -47
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "United States",
+            "team_id": "USA",
+            "team_name_display": "United States",
+            "group": "D",
+            "position": 1,
+            "played": 3,
+            "w": 2,
+            "d": 0,
+            "l": 1,
+            "gf": 8,
+            "ga": 4,
+            "gd": 4,
+            "points": 6,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "2-0-1",
+              "w": 2,
+              "d": 0,
+              "l": 1,
+              "gf": 8,
+              "ga": 4,
+              "gd": 4,
+              "goals_per_game": 2.667,
+              "conceded_per_game": 1.333,
+              "clean_sheet_pct": 33.3,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 66.7,
+              "over15_pct": 100.0,
+              "over25_pct": 66.7,
+              "under25_pct": 33.3,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Bosnia and Herzegovina",
+            "team_id": "BIH",
+            "team_name_display": "Bosnia and Herzegovina",
+            "group": "B",
+            "position": 3,
+            "played": 3,
+            "w": 1,
+            "d": 1,
+            "l": 1,
+            "gf": 5,
+            "ga": 6,
+            "gd": -1,
+            "points": 4,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-1-1",
+              "w": 1,
+              "d": 1,
+              "l": 1,
+              "gf": 5,
+              "ga": 6,
+              "gd": -1,
+              "goals_per_game": 1.667,
+              "conceded_per_game": 2.0,
+              "clean_sheet_pct": 0.0,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 100.0,
+              "over15_pct": 100.0,
+              "over25_pct": 66.7,
+              "under25_pct": 33.3,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "United States",
+            "team_id": "USA",
+            "team_name_display": "United States",
+            "last5": "3-0-2",
+            "last10": "6-0-4",
+            "last20": "12-1-7",
+            "goals_per_game": 1.95,
+            "conceded_per_game": 1.55,
+            "clean_sheet_pct": 20.0,
+            "btts_pct": 65.0,
+            "over25_pct": 70.0,
+            "under25_pct": 30.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Bosnia and Herzegovina",
+            "team_id": "BIH",
+            "team_name_display": "Bosnia and Herzegovina",
+            "last5": "1-3-1",
+            "last10": "5-4-1",
+            "last20": "9-6-5",
+            "goals_per_game": 1.55,
+            "conceded_per_game": 1.45,
+            "clean_sheet_pct": 20.0,
+            "btts_pct": 70.0,
+            "over25_pct": 50.0,
+            "under25_pct": 50.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 2,
+            "draws": 1,
+            "team_b_wins": 0,
+            "team_a_goals": 5,
+            "team_b_goals": 3,
+            "note": "Első hivatalos/kompetitív egymás elleni mérkőzésként jelölve; korábbi 3 találkozó barátságos volt."
+          },
+          "h2h_detail_level": "full_match_list",
+          "h2h_summary_total_count": 3,
+          "h2h_matches_listed_count": 3,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "A H2H lista és a summary darabszáma egyezik; közvetlenül számolható."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "részleges-teljes: M81, dátum, helyszín és kezdés FIFA hospitality / FIFA match centre / U.S. Soccer alapján; stadiontípus csak általánosan jelölt",
+          "ratings": "részleges: FIFA/Sofascore rang megvan USA-ra; Bosnia FIFA-pont hiányzik a kiolvasható ranglistában; Elo USA/Bosnia snippetből, trend részleges",
+          "group_stage": "részleges-teljes: alapállás és eredmények megvannak; xG/lövés/labdabirtoklás csak Fox per-game snippet alapján; kártya/szöglet/xGA nincs teljesen",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "teljesnek tűnik a három ismert barátságos alapján, de 11v11/WorldFootball további ellenőrzés ajánlott",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": []
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "United States csoportforma: 2-0-1, 8-4 gól, 6 pont.",
+          "Bosnia and Herzegovina csoportforma: 1-1-1, 5-6 gól, 4 pont.",
+          "United States last20: 12-1-7, 1.95 rúgott / 1.55 kapott gól/meccs.",
+          "Bosnia and Herzegovina last20: 9-6-5, 1.55 rúgott / 1.45 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 185.",
+          "FIFA-rang különbség team_a - team_b: -47.",
+          "Pihenő: United States 6 nap, Bosnia and Herzegovina 7 nap; Bosnia and Herzegovina +1 naptári nap.",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Over 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Igen; számítási alap: United States BTTS last20 65.0%, Bosnia and Herzegovina BTTS last20 70.0%.",
+          "Védekezési irány: United States clean sheet group 33.3%, last20 20.0%; Bosnia and Herzegovina clean sheet group 0.0%, last20 20.0%.",
+          "1X2 alapirány: United States győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 22%.",
+          "Büntetők esélye óvatos becslés: 9%.",
+          "Pontos eredmény bizalom óvatos becslés: 18%.",
+          "Összesített predikciós bizalom óvatos becslés: 56%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "United States: 2-0-1, 8-4; Bosnia and Herzegovina: 1-1-1, 5-6",
+        "last20_form": "United States: 12-1-7; Bosnia and Herzegovina: 9-6-5",
+        "goal_trend": "Over 2.5",
+        "defensive_trend": "United States CS last20 20.0%; Bosnia and Herzegovina CS last20 20.0%",
+        "elo_fifa_edge": "Elo diff: 185; FIFA rank diff: -47",
+        "h2h_direction": {
+          "team_a_wins": 2,
+          "draws": 1,
+          "team_b_wins": 0,
+          "team_a_goals": 5,
+          "team_b_goals": 3,
+          "note": "Első hivatalos/kompetitív egymás elleni mérkőzésként jelölve; korábbi 3 találkozó barátságos volt."
+        },
+        "rest_location": "Bosnia and Herzegovina +1 naptári nap",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Az USA erősebb csapatnak tűnik Elo, FIFA-rang és csoporteredmény alapján. Ez viszont nem tiszta underes favoritmeccs, mert mindkét csapat kapottgól-átlaga magas. Bosnia csoportban minden meccsen szerzett gólt, de clean sheet nélkül maradt. Az USA kezdeményezhet többet, de Bosnia átmenetekből vagy rögzített helyzetekből benne van a gólban. A döntő különbség az USA nagyobb támadóvolumene és erősségi fölénye lehet. A meccs közbeni fordulási kockázat az USA-nál magasabb, mint a többi favoritnál, mert a védekezési mutatói nem stabilak.",
+        "likely_stronger_start": "United States",
+        "expected_match_openness": "nyíltabb / gólváltásos",
+        "decisive_factor_summary": "A döntő különbség az USA nagyobb támadóvolumene és erősségi fölénye lehet",
+        "in_game_turnaround_risk": "magas"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "United States győzelem",
+          "confidence_pct": 63
+        },
+        "safe_direction": {
+          "pick": "United States nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "United States vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "United States"
+        },
+        "btts": {
+          "pick": "Igen"
+        },
+        "total_2_5": {
+          "pick": "Over 2.5"
+        },
+        "qualifier": {
+          "pick": "United States"
+        },
+        "extra_time_chance_pct": 22,
+        "penalties_chance_pct": 9
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-1",
+          "winner": "United States",
+          "logic_type": "alapforgatókönyv",
+          "reason": "USA erősségi előnye mellett mindkét csapat BTTS-mintája erős."
+        },
+        {
+          "score": "2-2",
+          "winner": null,
+          "logic_type": "reális alternatíva",
+          "reason": "Bosnia gólképessége és az USA magas kapottgól-átlaga miatt reális alternatív hosszabbításos forgatókönyv."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Bosnia rendes játékidőben nem kap ki.",
+        "why_unexpected": "Az USA Elo- és FIFA-előnye jelentős.",
+        "why_defensible": "Bosnia last20-ban 9-6-5, BTTS 70%, USA clean sheet csak 20%.",
+        "risk_level": "magas",
+        "confidence_pct": 25
+      },
+      "confidence": {
+        "base_outcome_pct": 63,
+        "goals_markets_pct": 64,
+        "correct_score_pct": 18,
+        "unexpected_tip_pct": 25,
+        "overall_prediction_pct": 56
+      },
+      "risks": [
+        "USA védekezési mutatói gyengébbek a favoritstátuszhoz képest.",
+        "Bosnia sok döntetlent játszik.",
+        "A +1 pihenőnap Bosnia felé kis tényező.",
+        "H2H barátságos meccsekből áll, ezért óvatosan kezelendő."
+      ],
+      "pwa": {
+        "tags": [
+          "over_2_5_candidate",
+          "btts_yes_candidate",
+          "favorite_with_defensive_variance",
+          "upset_risk"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "United States győzelem",
+            "confidence_pct": 63
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Over 2.5",
+            "confidence_pct": 64
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-1 / 2-2",
+            "confidence_pct": 18
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Bosnia rendes játékidőben nem kap ki.",
+            "risk_level": "magas",
+            "confidence_pct": 25
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 63,
+          "goals_confidence": 64,
+          "upset_risk_score": 37,
+          "extra_time_risk_score": 22,
+          "penalties_risk_score": 9
+        }
+      }
+    },
+    {
+      "match_id": "r32_m05_esp_aut",
+      "match_no_chronological": 5,
+      "title": "Spain vs Austria",
+      "teams": {
+        "team_a": {
+          "id": "ESP",
+          "name": "Spain"
+        },
+        "team_b": {
+          "id": "AUT",
+          "name": "Austria"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 84,
+        "date": "2026-07-02",
+        "kickoff_local": "2026-07-02 12:00 America/Los_Angeles",
+        "kickoff_hungary": "2026-07-02 21:00 Europe/Budapest",
+        "venue": "Los Angeles Stadium / SoFi Stadium",
+        "city": "Inglewood / Los Angeles",
+        "country": "United States",
+        "rest_days": {
+          "team_a": 6,
+          "team_b": 5,
+          "rest_advantage": "Spain +1 nap (naptári nap alapú; pontos óraszám frissítendő a hivatalos FIFA match centre teljes időadataival)"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Spain",
+            "elo": 2144,
+            "elo_rank": 2,
+            "fifa_rank": 2,
+            "fifa_points": 1874.71
+          },
+          "team_b": {
+            "team": "Austria",
+            "elo": null,
+            "elo_rank": null,
+            "fifa_rank": 24,
+            "fifa_points": 1597.4
+          },
+          "differences": {}
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Spain",
+            "team_id": "ESP",
+            "team_name_display": "Spain",
+            "group": "H",
+            "position": 1,
+            "played": 3,
+            "w": 2,
+            "d": 1,
+            "l": 0,
+            "gf": 5,
+            "ga": 0,
+            "gd": 5,
+            "points": 7,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "2-1-0",
+              "w": 2,
+              "d": 1,
+              "l": 0,
+              "gf": 5,
+              "ga": 0,
+              "gd": 5,
+              "goals_per_game": 1.667,
+              "conceded_per_game": 0.0,
+              "clean_sheet_pct": 100.0,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 0.0,
+              "over15_pct": 33.3,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Austria",
+            "team_id": "AUT",
+            "team_name_display": "Austria",
+            "group": "J",
+            "position": 2,
+            "played": 3,
+            "w": 1,
+            "d": 1,
+            "l": 1,
+            "gf": 6,
+            "ga": 6,
+            "gd": 0,
+            "points": 4,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-1-1",
+              "w": 1,
+              "d": 1,
+              "l": 1,
+              "gf": 6,
+              "ga": 6,
+              "gd": 0,
+              "goals_per_game": 2.0,
+              "conceded_per_game": 2.0,
+              "clean_sheet_pct": 0.0,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 66.7,
+              "over15_pct": 100.0,
+              "over25_pct": 66.7,
+              "under25_pct": 33.3,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Spain",
+            "team_id": "ESP",
+            "team_name_display": "Spain",
+            "last5": "3-2-0",
+            "last10": "6-4-0",
+            "last20": "14-5-1",
+            "goals_per_game": 2.65,
+            "conceded_per_game": 0.9,
+            "clean_sheet_pct": 55.0,
+            "btts_pct": 45.0,
+            "over25_pct": 75.0,
+            "under25_pct": 25.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Austria",
+            "team_id": "AUT",
+            "team_name_display": "Austria",
+            "last5": "3-1-1",
+            "last10": "6-2-2",
+            "last20": "13-4-3",
+            "goals_per_game": 2.4,
+            "conceded_per_game": 0.8,
+            "clean_sheet_pct": 40.0,
+            "btts_pct": 45.0,
+            "over25_pct": 45.0,
+            "under25_pct": 55.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 9,
+            "draws": 3,
+            "team_b_wins": 4,
+            "team_a_goals": null,
+            "team_b_goals": null
+          },
+          "h2h_detail_level": "summary_only",
+          "h2h_summary_total_count": 16,
+          "h2h_matches_listed_count": 0,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "Csak összesített H2H érhető el a fájlban; részletes meccslista nincs."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "részleges/több forrással ellenőrzött; FIFA oldal JS miatt csak részben kiolvasható, FOX/Sky/NBC/CBS megerősíti Match 84 és időpontot",
+          "ratings": "részleges; FIFA-rang ponttal megvan Sofascore-ból, Spain Elo megvan, Austria Elo pontos sora frissítendő",
+          "group_stage": "részleges, de fő eredmények és tabellák megvannak; haladó statok hiányosak",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "összesített H2H megvan, részletes mérkőzéslista hiányzik",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": [
+          {
+            "field": "head_to_head.full_detail_for_calculation",
+            "status": "summary_only",
+            "reason": "A későbbi historikus számításnál a H2H használható, de nem teljes részletes meccslistaként."
+          }
+        ]
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": false,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Spain csoportforma: 2-1-0, 5-0 gól, 7 pont.",
+          "Austria csoportforma: 1-1-1, 6-6 gól, 4 pont.",
+          "Spain last20: 14-5-1, 2.65 rúgott / 0.9 kapott gól/meccs.",
+          "Austria last20: 13-4-3, 2.4 rúgott / 0.8 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: None.",
+          "FIFA-rang különbség team_a - team_b: None.",
+          "Pihenő: Spain 6 nap, Austria 5 nap; Spain +1 nap (naptári nap alapú; pontos óraszám frissítendő a hivatalos FIFA match centre teljes időadataival).",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Under 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Nem; számítási alap: Spain BTTS last20 45.0%, Austria BTTS last20 45.0%.",
+          "Védekezési irány: Spain clean sheet group 100.0%, last20 55.0%; Austria clean sheet group 0.0%, last20 40.0%.",
+          "1X2 alapirány: Spain győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 17%.",
+          "Büntetők esélye óvatos becslés: 7%.",
+          "Pontos eredmény bizalom óvatos becslés: 20%.",
+          "Összesített predikciós bizalom óvatos becslés: 61%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Spain: 2-1-0, 5-0; Austria: 1-1-1, 6-6",
+        "last20_form": "Spain: 14-5-1; Austria: 13-4-3",
+        "goal_trend": "Under 2.5",
+        "defensive_trend": "Spain CS last20 55.0%; Austria CS last20 40.0%",
+        "elo_fifa_edge": "Elo diff: None; FIFA rank diff: None",
+        "h2h_direction": {
+          "team_a_wins": 9,
+          "draws": 3,
+          "team_b_wins": 4,
+          "team_a_goals": null,
+          "team_b_goals": null
+        },
+        "rest_location": "Spain +1 nap (naptári nap alapú; pontos óraszám frissítendő a hivatalos FIFA match centre teljes időadataival)",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Spain csoportköre védekezésben elit: 0 kapott gól. Austria last20 formája ugyanakkor kifejezetten erős, ezért nem tekinthető gyenge underdognak. Spain stabilabb és magasabb plafonú csapat, de Austria gólszerzési trendje miatt nem teljesen steril meccs várható. Spain birtokolhat többet, Austria pedig magas intenzitással próbálhatja megtörni a spanyol kontrollt. A döntő különbség Spain védekezési kontrollja és FIFA-rangbeli fölénye lehet. A fordulási kockázat Austriánál nagyobb, mert a csoportban 6 kapott gólt engedett.",
+        "likely_stronger_start": "Spain",
+        "expected_match_openness": "zártabb / kontrolláltabb",
+        "decisive_factor_summary": "A döntő különbség Spain védekezési kontrollja és FIFA-rangbeli fölénye lehet",
+        "in_game_turnaround_risk": "alacsony-közepes"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "Spain győzelem",
+          "confidence_pct": 70
+        },
+        "safe_direction": {
+          "pick": "Spain nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Spain vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Spain"
+        },
+        "btts": {
+          "pick": "Nem",
+          "lean": "enyhén nem"
+        },
+        "total_2_5": {
+          "pick": "Under 2.5",
+          "lean": "enyhe"
+        },
+        "qualifier": {
+          "pick": "Spain"
+        },
+        "extra_time_chance_pct": 17,
+        "penalties_chance_pct": 7
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-0",
+          "winner": "Spain",
+          "logic_type": "alapforgatókönyv",
+          "reason": "Spain 0 kapott gólos csoportköre és Austria csoportbeli védekezési sebezhetősége ezt támogatja."
+        },
+        {
+          "score": "2-1",
+          "winner": "Spain",
+          "logic_type": "reális alternatíva",
+          "reason": "Austria last20 támadóátlaga 2.40, ezért reális alternatíva, hogy megtöri Spain clean sheet sorát."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Austria gólt szerez.",
+        "why_unexpected": "Spain csoportban 0 gólt kapott.",
+        "why_defensible": "Austria last20-ban 2.40 gólt rúg meccsenként, csoportban 6 gólt szerzett.",
+        "risk_level": "közepes",
+        "confidence_pct": 24
+      },
+      "confidence": {
+        "base_outcome_pct": 70,
+        "goals_markets_pct": 52,
+        "correct_score_pct": 20,
+        "unexpected_tip_pct": 24,
+        "overall_prediction_pct": 61
+      },
+      "risks": [
+        "Austria Elo hiányzik.",
+        "Austria támadóformája erős, nem tipikus gyenge underdog.",
+        "Spain failed to score csoportmutatója 33.3%, ezért a korai spanyol gól nem garantálható.",
+        "H2H csak részleges összesítésként használható."
+      ],
+      "pwa": {
+        "tags": [
+          "stable_favorite",
+          "btts_no_lean",
+          "under_2_5_lean",
+          "data_gap_elo_opponent"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Spain győzelem",
+            "confidence_pct": 70
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Under 2.5",
+            "confidence_pct": 52
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-0 / 2-1",
+            "confidence_pct": 20
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Austria gólt szerez.",
+            "risk_level": "közepes",
+            "confidence_pct": 24
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 70,
+          "goals_confidence": 52,
+          "upset_risk_score": 10,
+          "extra_time_risk_score": 17,
+          "penalties_risk_score": 7
+        }
+      }
+    },
+    {
+      "match_id": "r32_m06_por_cro",
+      "match_no_chronological": 6,
+      "title": "Portugal vs Croatia",
+      "teams": {
+        "team_a": {
+          "id": "POR",
+          "name": "Portugal"
+        },
+        "team_b": {
+          "id": "CRO",
+          "name": "Croatia"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 83,
+        "date": "2026-07-02 local / 2026-07-03 Europe/Budapest",
+        "kickoff_local": "2026-07-02 19:00 America/Toronto (EDT)",
+        "kickoff_hungary": "2026-07-03 01:00 Europe/Budapest (CEST)",
+        "venue": "Toronto Stadium / BMO Field (források megnevezése eltér: FIFA = Toronto Stadium, Sofascore = BMO Field)",
+        "city": "Toronto",
+        "country": "Canada",
+        "rest_days": {
+          "team_a": 5,
+          "team_b": 5,
+          "rest_advantage": "nincs naptári nap alapú pihenőnap-előny; pontos óraszám frissítendő hivatalos teljes időadattal"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Portugal",
+            "elo": 1990,
+            "elo_rank": 7,
+            "fifa_rank": 5,
+            "fifa_points": 1767.85
+          },
+          "team_b": {
+            "team": "Croatia",
+            "elo": 1905,
+            "elo_rank": 14,
+            "fifa_rank": 11,
+            "fifa_points": 1714.87
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 85,
+            "fifa_rank_difference_team_a_minus_team_b": -6
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Portugal",
+            "team_id": "POR",
+            "team_name_display": "Portugal",
+            "group": "K",
+            "position": 2,
+            "played": 3,
+            "w": 1,
+            "d": 2,
+            "l": 0,
+            "gf": 6,
+            "ga": 1,
+            "gd": 5,
+            "points": 5,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-2-0",
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 6,
+              "ga": 1,
+              "gd": 5,
+              "goals_per_game": 2.0,
+              "conceded_per_game": 0.333,
+              "clean_sheet_pct": 66.7,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 33.3,
+              "over15_pct": 66.7,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Croatia",
+            "team_id": "CRO",
+            "team_name_display": "Croatia",
+            "group": "L",
+            "position": 2,
+            "played": 3,
+            "w": 2,
+            "d": 0,
+            "l": 1,
+            "gf": 5,
+            "ga": 5,
+            "gd": 0,
+            "points": 6,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "2-0-1",
+              "w": 2,
+              "d": 0,
+              "l": 1,
+              "gf": 5,
+              "ga": 5,
+              "gd": 0,
+              "goals_per_game": 1.667,
+              "conceded_per_game": 1.667,
+              "clean_sheet_pct": 33.3,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 66.7,
+              "over15_pct": 66.7,
+              "over25_pct": 66.7,
+              "under25_pct": 33.3,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Portugal",
+            "team_id": "POR",
+            "team_name_display": "Portugal",
+            "last5": "3-2-0",
+            "last10": "5-4-1",
+            "last20": "12-6-2",
+            "goals_per_game": 2.35,
+            "conceded_per_game": 0.9,
+            "clean_sheet_pct": 35.0,
+            "btts_pct": 55.0,
+            "over25_pct": 55.0,
+            "under25_pct": 45.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Croatia",
+            "team_id": "CRO",
+            "team_name_display": "Croatia",
+            "last5": "3-0-2",
+            "last10": "7-0-3",
+            "last20": "12-3-5",
+            "goals_per_game": 2.1,
+            "conceded_per_game": 1.15,
+            "clean_sheet_pct": 35.0,
+            "btts_pct": 50.0,
+            "over25_pct": 60.0,
+            "under25_pct": 40.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 6,
+            "draws": 2,
+            "team_b_wins": 1,
+            "team_a_goals": 16,
+            "team_b_goals": 8,
+            "source": "AIScore H2H summary; National-football-teams partial match list cross-check"
+          },
+          "h2h_detail_level": "partial_match_list_summary_total_mismatch",
+          "h2h_summary_total_count": 9,
+          "h2h_matches_listed_count": 5,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "Van részletes H2H lista, de rövidebb/eltér a summary teljes darabszámától; számításnál óvatos súlyozás javasolt."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "részleges/több forrással ellenőrzött; FIFA Match Centre oldal JS miatt csak snippet szinten kiolvasható, FIFA/Sofascore/Reuters megerősítésekből összeállítva",
+          "ratings": "részleges, de fő Elo- és FIFA-rang/pont megvan két forrásból",
+          "group_stage": "fő eredmények és tabellalogika megvan; haladó statok hiányosak",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "összesítés megvan; részletes lista részleges, de több forrással keresztellenőrizve",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": [
+          {
+            "field": "head_to_head.full_detail_for_calculation",
+            "status": "partial_match_list_summary_total_mismatch",
+            "reason": "A későbbi historikus számításnál a H2H használható, de nem teljes részletes meccslistaként."
+          }
+        ]
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Portugal csoportforma: 1-2-0, 6-1 gól, 5 pont.",
+          "Croatia csoportforma: 2-0-1, 5-5 gól, 6 pont.",
+          "Portugal last20: 12-6-2, 2.35 rúgott / 0.9 kapott gól/meccs.",
+          "Croatia last20: 12-3-5, 2.1 rúgott / 1.15 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 85.",
+          "FIFA-rang különbség team_a - team_b: -6.",
+          "Pihenő: Portugal 5 nap, Croatia 5 nap; nincs naptári nap alapú pihenőnap-előny; pontos óraszám frissítendő hivatalos teljes időadattal.",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Over 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Igen; számítási alap: Portugal BTTS last20 55.0%, Croatia BTTS last20 50.0%.",
+          "Védekezési irány: Portugal clean sheet group 66.7%, last20 35.0%; Croatia clean sheet group 33.3%, last20 35.0%.",
+          "1X2 alapirány: Portugal győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 26%.",
+          "Büntetők esélye óvatos becslés: 12%.",
+          "Pontos eredmény bizalom óvatos becslés: 18%.",
+          "Összesített predikciós bizalom óvatos becslés: 54%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Portugal: 1-2-0, 6-1; Croatia: 2-0-1, 5-5",
+        "last20_form": "Portugal: 12-6-2; Croatia: 12-3-5",
+        "goal_trend": "Over 2.5",
+        "defensive_trend": "Portugal CS last20 35.0%; Croatia CS last20 35.0%",
+        "elo_fifa_edge": "Elo diff: 85; FIFA rank diff: -6",
+        "h2h_direction": {
+          "team_a_wins": 6,
+          "draws": 2,
+          "team_b_wins": 1,
+          "team_a_goals": 16,
+          "team_b_goals": 8,
+          "source": "AIScore H2H summary; National-football-teams partial match list cross-check"
+        },
+        "rest_location": "nincs naptári nap alapú pihenőnap-előny; pontos óraszám frissítendő hivatalos teljes időadattal",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Portugal védekezésben sokkal jobb csoportkört hozott, de Croatia 6 ponttal érkezik. Portugal az enyhe-közepes favorit, főleg Elo, FIFA és H2H miatt. Croatia last20-ban 2.10 gólt rúg meccsenként, ezért teljesen kapott gól nélküli portugál meccset nem vennék túl erős alapnak. Portugal kontrolláltabban kezdhet, Croatia pedig fokozatosan nyithat, ha hátrányba kerül. A döntő különbség Portugal jobb védekezési csoportmutatója lehet. A fordulási kockázat Portugaliánál is valós, mert Croatia erős és gólképes ellenfél az adatok alapján.",
+        "likely_stronger_start": "Portugal",
+        "expected_match_openness": "nyíltabb / gólváltásos",
+        "decisive_factor_summary": "A döntő különbség Portugal jobb védekezési csoportmutatója lehet",
+        "in_game_turnaround_risk": "közepes"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "Portugal győzelem",
+          "confidence_pct": 61
+        },
+        "safe_direction": {
+          "pick": "Portugal nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Portugal vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Portugal"
+        },
+        "btts": {
+          "pick": "Igen"
+        },
+        "total_2_5": {
+          "pick": "Over 2.5",
+          "lean": "enyhe"
+        },
+        "qualifier": {
+          "pick": "Portugal"
+        },
+        "extra_time_chance_pct": 26,
+        "penalties_chance_pct": 12
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-1",
+          "winner": "Portugal",
+          "logic_type": "alapforgatókönyv",
+          "reason": "Portugal enyhe erősségi előnye és mindkét csapat BTTS/over mintája ezt támogatja."
+        },
+        {
+          "score": "1-1",
+          "winner": null,
+          "logic_type": "reális alternatíva",
+          "reason": "Croatia versenyképes last20 formája és Portugal döntetlenes csoportmintája miatt reális alternatíva."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Hosszabbítás.",
+        "why_unexpected": "Portugal több fő mutatóban előnyben van.",
+        "why_defensible": "Mindkét csapat erős last20 mérleggel jön, Portugal 6 döntetlen, Croatia 3 döntetlen a last20-ban; Croatia 6 pontos csoportot hozott.",
+        "risk_level": "közepes",
+        "confidence_pct": 28
+      },
+      "confidence": {
+        "base_outcome_pct": 61,
+        "goals_markets_pct": 55,
+        "correct_score_pct": 18,
+        "unexpected_tip_pct": 28,
+        "overall_prediction_pct": 54
+      },
+      "risks": [
+        "Croatia nem gyenge underdog, csoportban több pontot szerzett, mint Portugal.",
+        "H2H részletes adat nem teljesen tiszta.",
+        "Mindkét csapat gólképes, de kieséses szakaszban a tempó visszaeshet."
+      ],
+      "pwa": {
+        "tags": [
+          "btts_yes_candidate",
+          "over_2_5_lean",
+          "extra_time_risk",
+          "medium_confidence"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Portugal győzelem",
+            "confidence_pct": 61
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Over 2.5",
+            "confidence_pct": 55
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-1 / 1-1",
+            "confidence_pct": 18
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Hosszabbítás.",
+            "risk_level": "közepes",
+            "confidence_pct": 28
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 61,
+          "goals_confidence": 55,
+          "upset_risk_score": 14,
+          "extra_time_risk_score": 26,
+          "penalties_risk_score": 12
+        }
+      }
+    },
+    {
+      "match_id": "r32_m07_sui_alg",
+      "match_no_chronological": 7,
+      "title": "Switzerland vs Algeria",
+      "teams": {
+        "team_a": {
+          "id": "SUI",
+          "name": "Switzerland"
+        },
+        "team_b": {
+          "id": "ALG",
+          "name": "Algeria"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 85,
+        "date": "2026-07-02 local / 2026-07-03 Europe/Budapest",
+        "kickoff_local": "2026-07-02 20:00 America/Vancouver (PDT)",
+        "kickoff_hungary": "2026-07-03 05:00 Europe/Budapest (CEST)",
+        "venue": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "Canada",
+        "rest_days": {
+          "team_a": 8,
+          "team_b": 5,
+          "rest_advantage": "Switzerland +3 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám frissítendő teljes kickoff-adattal"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Switzerland",
+            "elo": 1914,
+            "elo_rank": 11,
+            "fifa_rank": 19,
+            "fifa_points": 1650.06
+          },
+          "team_b": {
+            "team": "Algeria",
+            "elo": 1785,
+            "elo_rank": 26,
+            "fifa_rank": 28,
+            "fifa_points": 1571.03
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 129,
+            "fifa_rank_difference_team_a_minus_team_b": -9
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Switzerland",
+            "team_id": "SUI",
+            "team_name_display": "Switzerland",
+            "group": "B",
+            "position": 1,
+            "played": 3,
+            "w": 2,
+            "d": 1,
+            "l": 0,
+            "gf": 7,
+            "ga": 3,
+            "gd": 4,
+            "points": 7,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "2-1-0",
+              "w": 2,
+              "d": 1,
+              "l": 0,
+              "gf": 7,
+              "ga": 3,
+              "gd": 4,
+              "goals_per_game": 2.333,
+              "conceded_per_game": 1.0,
+              "clean_sheet_pct": 0.0,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 100.0,
+              "over15_pct": 100.0,
+              "over25_pct": 66.7,
+              "under25_pct": 33.3,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Algeria",
+            "team_id": "ALG",
+            "team_name_display": "Algeria",
+            "group": "J",
+            "position": 3,
+            "played": 3,
+            "w": 1,
+            "d": 1,
+            "l": 1,
+            "gf": 5,
+            "ga": 7,
+            "gd": -2,
+            "points": 4,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-1-1",
+              "w": 1,
+              "d": 1,
+              "l": 1,
+              "gf": 5,
+              "ga": 7,
+              "gd": -2,
+              "goals_per_game": 1.667,
+              "conceded_per_game": 2.333,
+              "clean_sheet_pct": 0.0,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 66.7,
+              "over15_pct": 100.0,
+              "over25_pct": 100.0,
+              "under25_pct": 0.0,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Switzerland",
+            "team_id": "SUI",
+            "team_name_display": "Switzerland",
+            "last5": "3-2-0",
+            "last10": "4-5-1",
+            "last20": "10-8-2",
+            "goals_per_game": 2.3,
+            "conceded_per_game": 1.05,
+            "clean_sheet_pct": 30.0,
+            "btts_pct": 70.0,
+            "over25_pct": 60.0,
+            "under25_pct": 40.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Algeria",
+            "team_id": "ALG",
+            "team_name_display": "Algeria",
+            "last5": "3-1-1",
+            "last10": "6-2-2",
+            "last20": "14-3-3",
+            "goals_per_game": 2.15,
+            "conceded_per_game": 0.7,
+            "clean_sheet_pct": 55.0,
+            "btts_pct": 35.0,
+            "over25_pct": 55.0,
+            "under25_pct": 45.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 2,
+            "draws": 0,
+            "team_b_wins": 0,
+            "team_a_goals": 4,
+            "team_b_goals": 1,
+            "source": "11v11 Switzerland/Algeria H2H summary és 11v11 Switzerland stats"
+          },
+          "h2h_detail_level": "full_match_list",
+          "h2h_summary_total_count": 2,
+          "h2h_matches_listed_count": 2,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "A H2H lista és a summary darabszáma egyezik; közvetlenül számolható."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "jó/több forrással ellenőrzött: FIFA hospitality structured data, Sofascore/FotMob match page, Reuters/UEFA kiegészítés; FIFA Match Centre teljes oldala JS miatt részleges",
+          "ratings": "részleges, de fő Elo- és FIFA-rang/pont megvan több forrásból",
+          "group_stage": "fő eredmények és tabellalogika megvan; haladó statok hiányosak",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "teljes ismert H2H rövid lista megvan két mérkőzéssel, több forrással keresztellenőrizve",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": []
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Switzerland csoportforma: 2-1-0, 7-3 gól, 7 pont.",
+          "Algeria csoportforma: 1-1-1, 5-7 gól, 4 pont.",
+          "Switzerland last20: 10-8-2, 2.3 rúgott / 1.05 kapott gól/meccs.",
+          "Algeria last20: 14-3-3, 2.15 rúgott / 0.7 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 129.",
+          "FIFA-rang különbség team_a - team_b: -9.",
+          "Pihenő: Switzerland 8 nap, Algeria 5 nap; Switzerland +3 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám frissítendő teljes kickoff-adattal.",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Over 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Igen; számítási alap: Switzerland BTTS last20 70.0%, Algeria BTTS last20 35.0%.",
+          "Védekezési irány: Switzerland clean sheet group 0.0%, last20 30.0%; Algeria clean sheet group 0.0%, last20 55.0%.",
+          "1X2 alapirány: Switzerland győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 21%.",
+          "Büntetők esélye óvatos becslés: 9%.",
+          "Pontos eredmény bizalom óvatos becslés: 18%.",
+          "Összesített predikciós bizalom óvatos becslés: 58%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Switzerland: 2-1-0, 7-3; Algeria: 1-1-1, 5-7",
+        "last20_form": "Switzerland: 10-8-2; Algeria: 14-3-3",
+        "goal_trend": "Over 2.5",
+        "defensive_trend": "Switzerland CS last20 30.0%; Algeria CS last20 55.0%",
+        "elo_fifa_edge": "Elo diff: 129; FIFA rank diff: -9",
+        "h2h_direction": {
+          "team_a_wins": 2,
+          "draws": 0,
+          "team_b_wins": 0,
+          "team_a_goals": 4,
+          "team_b_goals": 1,
+          "source": "11v11 Switzerland/Algeria H2H summary és 11v11 Switzerland stats"
+        },
+        "rest_location": "Switzerland +3 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám frissítendő teljes kickoff-adattal",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Switzerland csoportelsőként, jobb Elo/FIFA háttérrel és nagy pihenőelőnnyel érkezik. Algeria last20 formája viszont erősebb, mint amit a csoportbeli 4 pont elsőre mutat. Ez erősen gólváltásos, overes meccsjelölt, mert a csoportban egyik csapat sem volt clean sheet gép. Switzerland frissebben és szervezettebben kezdhet, Algeria viszont támadásban bőven képes problémát okozni. A döntő különbség Switzerland pihenőelőnye és erősebb rangsorpozíciója lehet. A fordulási kockázat magasabb, mint az átlag favoritmeccseken, mert Algeria last20-ban 14 győzelmet hozott.",
+        "likely_stronger_start": "Switzerland",
+        "expected_match_openness": "nyíltabb / gólváltásos",
+        "decisive_factor_summary": "A döntő különbség Switzerland pihenőelőnye és erősebb rangsorpozíciója lehet",
+        "in_game_turnaround_risk": "magas"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "Switzerland győzelem",
+          "confidence_pct": 66
+        },
+        "safe_direction": {
+          "pick": "Switzerland nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Switzerland vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Switzerland"
+        },
+        "btts": {
+          "pick": "Igen"
+        },
+        "total_2_5": {
+          "pick": "Over 2.5"
+        },
+        "qualifier": {
+          "pick": "Switzerland"
+        },
+        "extra_time_chance_pct": 21,
+        "penalties_chance_pct": 9
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-1",
+          "winner": "Switzerland",
+          "logic_type": "alapforgatókönyv",
+          "reason": "Switzerland előnyei mellett Algeria gólszerzése is erősen védhető."
+        },
+        {
+          "score": "2-2",
+          "winner": null,
+          "logic_type": "reális alternatíva",
+          "reason": "Algeria last20 támadóereje és Switzerland magas BTTS-mintája miatt reális, nyílt alternatíva."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Algeria legalább 2 gólt szerez.",
+        "why_unexpected": "Switzerland a rangsorok, H2H és pihenő alapján favorit.",
+        "why_defensible": "Algeria last20-ban 2.15 gólt rúg meccsenként, Switzerland csoportban minden meccsen kapott gólt.",
+        "risk_level": "magas",
+        "confidence_pct": 25
+      },
+      "confidence": {
+        "base_outcome_pct": 66,
+        "goals_markets_pct": 63,
+        "correct_score_pct": 18,
+        "unexpected_tip_pct": 25,
+        "overall_prediction_pct": 58
+      },
+      "risks": [
+        "Algeria last20 formája nagyon erős.",
+        "Switzerland clean sheet csoportmutatója gyenge.",
+        "A +3 pihenőnap fontos, de nem garantál teljesítményelőnyt.",
+        "A gólszám irányát erős adatok támogatják, de kieséses meccsen tempócsökkenés jöhet."
+      ],
+      "pwa": {
+        "tags": [
+          "over_2_5_candidate",
+          "btts_yes_candidate",
+          "rest_advantage",
+          "upset_risk"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Switzerland győzelem",
+            "confidence_pct": 66
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Over 2.5",
+            "confidence_pct": 63
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-1 / 2-2",
+            "confidence_pct": 18
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Algeria legalább 2 gólt szerez.",
+            "risk_level": "magas",
+            "confidence_pct": 25
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 66,
+          "goals_confidence": 63,
+          "upset_risk_score": 34,
+          "extra_time_risk_score": 21,
+          "penalties_risk_score": 9
+        }
+      }
+    },
+    {
+      "match_id": "r32_m08_aus_egy",
+      "match_no_chronological": 8,
+      "title": "Australia vs Egypt",
+      "teams": {
+        "team_a": {
+          "id": "AUS",
+          "name": "Australia"
+        },
+        "team_b": {
+          "id": "EGY",
+          "name": "Egypt"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 86,
+        "date": "2026-07-03 local / 2026-07-03 Europe/Budapest",
+        "kickoff_local": "2026-07-03 13:00 America/Chicago (CDT)",
+        "kickoff_hungary": "2026-07-03 20:00 Europe/Budapest (CEST)",
+        "venue": "Dallas Stadium / AT&T Stadium",
+        "city": "Arlington, Texas / Dallas host market",
+        "country": "United States",
+        "rest_days": {
+          "team_a": 8,
+          "team_b": 7,
+          "rest_advantage": "Australia +1 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám időzónákkal részben frissítendő"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Australia",
+            "elo": 1800,
+            "elo_rank": 25,
+            "fifa_rank": 27,
+            "fifa_points": 1579.34
+          },
+          "team_b": {
+            "team": "Egypt",
+            "elo": 1742,
+            "elo_rank": 36,
+            "fifa_rank": 29,
+            "fifa_points": 1562.37
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 58,
+            "fifa_rank_difference_team_a_minus_team_b": -2
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Australia",
+            "team_id": "AUS",
+            "team_name_display": "Australia",
+            "group": "D",
+            "position": 2,
+            "played": 3,
+            "w": 1,
+            "d": 1,
+            "l": 1,
+            "gf": 2,
+            "ga": 2,
+            "gd": 0,
+            "points": 4,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-1-1",
+              "w": 1,
+              "d": 1,
+              "l": 1,
+              "gf": 2,
+              "ga": 2,
+              "gd": 0,
+              "goals_per_game": 0.667,
+              "conceded_per_game": 0.667,
+              "clean_sheet_pct": 66.7,
+              "failed_to_score_pct": 66.7,
+              "btts_pct": 0.0,
+              "over15_pct": 66.7,
+              "over25_pct": 0.0,
+              "under25_pct": 100.0,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Egypt",
+            "team_id": "EGY",
+            "team_name_display": "Egypt",
+            "group": "G",
+            "position": 2,
+            "played": 3,
+            "w": 1,
+            "d": 2,
+            "l": 0,
+            "gf": 5,
+            "ga": 3,
+            "gd": 2,
+            "points": 5,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-2-0",
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 5,
+              "ga": 3,
+              "gd": 2,
+              "goals_per_game": 1.667,
+              "conceded_per_game": 1.0,
+              "clean_sheet_pct": 0.0,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 100.0,
+              "over15_pct": 100.0,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Australia",
+            "team_id": "AUS",
+            "team_name_display": "Australia",
+            "last5": "1-2-2",
+            "last10": "3-2-5",
+            "last20": "10-5-5",
+            "goals_per_game": 1.4,
+            "conceded_per_game": 0.85,
+            "clean_sheet_pct": 40.0,
+            "btts_pct": 40.0,
+            "over25_pct": 35.0,
+            "under25_pct": 65.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Egypt",
+            "team_id": "EGY",
+            "team_name_display": "Egypt",
+            "last5": "1-3-1",
+            "last10": "4-3-3",
+            "last20": "9-6-5",
+            "goals_per_game": 1.3,
+            "conceded_per_game": 0.9,
+            "clean_sheet_pct": 35.0,
+            "btts_pct": 50.0,
+            "over25_pct": 40.0,
+            "under25_pct": 60.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 0,
+            "draws": 1,
+            "team_b_wins": 1,
+            "team_a_goals": 0,
+            "team_b_goals": 3,
+            "note": "A 1987-es tizenegyespárbajt H2H összesítésben döntetlenként kezeltem a rendes játékidős 0-0 miatt; 11v11 külön W-ként jelölheti Ausztráliának."
+          },
+          "h2h_detail_level": "full_match_list",
+          "h2h_summary_total_count": 2,
+          "h2h_matches_listed_count": 2,
+          "no_h2h_found_for_calculation": false,
+          "calculation_note": "A H2H lista és a summary darabszáma egyezik; közvetlenül számolható."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [
+            {
+              "player": "Mohanad Lasheen",
+              "also_spelled": "Mohannad Lasheen",
+              "reason": "two yellow cards / second booking in Egypt v Iran group-stage match",
+              "ban_length": "1 match",
+              "suspended_for": "Australia v Egypt, Round of 32",
+              "source_level": "secondary_public_sources; official FIFA complete disciplinary list not found in accessible machine-readable form",
+              "sources": [
+                "Fantasy Football Scout",
+                "Pan Africa Football",
+                "RotoWire"
+              ]
+            }
+          ],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "jó/több forrással ellenőrzött: Al Jazeera, Football Australia, Guardian; FIFA hivatalos menetrendoldal JS miatt nem teljesen kiolvasható",
+          "ratings": "jó/részleges: Elo és FIFA-rang/pont megvan International-football.net és Sofascore alapján; trendek részlegesek",
+          "group_stage": "fő eredmények és tabellaadatok megvannak; haladó csapatösszesítők hiányosak, egyes ESPN meccsstatisztikák részlegesen mentve",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "teljes ismert H2H rövid lista megvan két mérkőzéssel; PSO-kezelés külön megjegyezve",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": []
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Australia csoportforma: 1-1-1, 2-2 gól, 4 pont.",
+          "Egypt csoportforma: 1-2-0, 5-3 gól, 5 pont.",
+          "Australia last20: 10-5-5, 1.4 rúgott / 0.85 kapott gól/meccs.",
+          "Egypt last20: 9-6-5, 1.3 rúgott / 0.9 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 58.",
+          "FIFA-rang különbség team_a - team_b: -2.",
+          "Pihenő: Australia 8 nap, Egypt 7 nap; Australia +1 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám időzónákkal részben frissítendő.",
+          "Eltiltások team_a: 0, team_b: 1."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Under 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Nem; számítási alap: Australia BTTS last20 40.0%, Egypt BTTS last20 50.0%.",
+          "Védekezési irány: Australia clean sheet group 66.7%, last20 40.0%; Egypt clean sheet group 0.0%, last20 35.0%.",
+          "1X2 alapirány: Döntetlen; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 32%.",
+          "Büntetők esélye óvatos becslés: 15%.",
+          "Pontos eredmény bizalom óvatos becslés: 17%.",
+          "Összesített predikciós bizalom óvatos becslés: 49%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Australia: 1-1-1, 2-2; Egypt: 1-2-0, 5-3",
+        "last20_form": "Australia: 10-5-5; Egypt: 9-6-5",
+        "goal_trend": "Under 2.5",
+        "defensive_trend": "Australia CS last20 40.0%; Egypt CS last20 35.0%",
+        "elo_fifa_edge": "Elo diff: 58; FIFA rank diff: -2",
+        "h2h_direction": {
+          "team_a_wins": 0,
+          "draws": 1,
+          "team_b_wins": 1,
+          "team_a_goals": 0,
+          "team_b_goals": 3,
+          "note": "A 1987-es tizenegyespárbajt H2H összesítésben döntetlenként kezeltem a rendes játékidős 0-0 miatt; 11v11 külön W-ként jelölheti Ausztráliának."
+        },
+        "rest_location": "Australia +1 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám időzónákkal részben frissítendő",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Ez az egyik legkiegyenlítettebb meccs. Australia minimális Elo/FIFA és pihenőelőnnyel bír, Egypt viszont jobb csoportpontszámot hozott. Az under 2.5 irány erős, mert mindkét last20 kapottgól-átlag 1 alatt van, Australia csoportja pedig teljesen underes volt. Australia zártabb, kontrolláltabb meccset próbálhat játszani, Egypt viszont a csoportmintája alapján képes lehet gólt találni. Az eltiltás Egypt középpályás stabilitását gyengítheti, de ennek pontos hatása a JSON-ból nem számszerűsíthető. A fordulási kockázat mindkét oldalon közepes, mert egyik csapatnak sincs nagy fölénye.",
+        "likely_stronger_start": "kiegyenlített kezdés / Australia óvatosabb kontroll",
+        "expected_match_openness": "zártabb / kontrolláltabb",
+        "decisive_factor_summary": "Az eltiltás Egypt középpályás stabilitását gyengítheti, de ennek pontos hatása a JSON-ból nem számszerűsíthető",
+        "in_game_turnaround_risk": "magas"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "X",
+          "label": "Döntetlen",
+          "confidence_pct": 48
+        },
+        "safe_direction": {
+          "pick": "Australia nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Australia vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Australia"
+        },
+        "btts": {
+          "pick": "Nem",
+          "lean": "enyhén nem"
+        },
+        "total_2_5": {
+          "pick": "Under 2.5"
+        },
+        "qualifier": {
+          "pick": "Australia"
+        },
+        "extra_time_chance_pct": 32,
+        "penalties_chance_pct": 15
+      },
+      "correct_score_tips": [
+        {
+          "score": "1-1",
+          "winner": null,
+          "logic_type": "alapforgatókönyv",
+          "reason": "Egypt csoportbeli BTTS-mintája és a kiegyenlített erőviszony ezt támogatja."
+        },
+        {
+          "score": "1-0",
+          "winner": "Australia",
+          "logic_type": "reális alternatíva",
+          "reason": "Australia jobb védekezési csoportadata, enyhe Elo-előnye és Egypt eltiltása miatt reális alternatíva."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "0–0 rendes játékidőben, büntetők felé sodródó meccs.",
+        "why_unexpected": "Egypt csoportban 100% BTTS-t hozott.",
+        "why_defensible": "Australia csoportban 100% under 2.5 és 0% BTTS, last20-ban mindkét csapat kapottgól-átlaga 1 alatt van.",
+        "risk_level": "közepes",
+        "confidence_pct": 27
+      },
+      "confidence": {
+        "base_outcome_pct": 48,
+        "goals_markets_pct": 62,
+        "correct_score_pct": 17,
+        "unexpected_tip_pct": 27,
+        "overall_prediction_pct": 49
+      },
+      "risks": [
+        "Egypt csoport BTTS-mintája és Australia csoport BTTS-mintája ellentmond egymásnak.",
+        "H2H nagyon kevés mintából áll.",
+        "Lasheen eltiltása fontos lehet, de a JSON nem ad pozíciós mélységi hatást.",
+        "Ez az egyik legbizonytalanabb 1X2 meccs."
+      ],
+      "pwa": {
+        "tags": [
+          "under_2_5_candidate",
+          "extra_time_risk",
+          "penalties_risk",
+          "low_confidence",
+          "confirmed_suspension"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Döntetlen",
+            "confidence_pct": 48
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Under 2.5",
+            "confidence_pct": 62
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "1-1 / 1-0",
+            "confidence_pct": 17
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "0–0 rendes játékidőben, büntetők felé sodródó meccs.",
+            "risk_level": "közepes",
+            "confidence_pct": 27
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 48,
+          "goals_confidence": 62,
+          "upset_risk_score": 52,
+          "extra_time_risk_score": 32,
+          "penalties_risk_score": 15
+        }
+      }
+    },
+    {
+      "match_id": "r32_m09_arg_cpv",
+      "match_no_chronological": 9,
+      "title": "Argentina vs Cape Verde",
+      "teams": {
+        "team_a": {
+          "id": "ARG",
+          "name": "Argentina"
+        },
+        "team_b": {
+          "id": "CPV",
+          "name": "Cape Verde"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 86,
+        "date": "2026-07-03 local / 2026-07-04 Europe/Budapest",
+        "kickoff_local": "2026-07-03 18:00 America/New_York (EDT)",
+        "kickoff_hungary": "2026-07-04 00:00 Europe/Budapest (CEST)",
+        "venue": "Miami Stadium / Hard Rock Stadium",
+        "city": "Miami Gardens, Florida / Miami host market",
+        "country": "United States",
+        "rest_days": {
+          "team_a": 6,
+          "team_b": 7,
+          "rest_advantage": "Cape Verde +1 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám időzónákkal részben frissítendő"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Argentina",
+            "elo": 2148,
+            "elo_rank": 1,
+            "fifa_rank": 1,
+            "fifa_points": 1877.27
+          },
+          "team_b": {
+            "team": "Cape Verde",
+            "elo": 1622,
+            "elo_rank": 60,
+            "fifa_rank": 67,
+            "fifa_points": 1371.11
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 526,
+            "fifa_rank_difference_team_a_minus_team_b": -66
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Argentina",
+            "team_id": "ARG",
+            "team_name_display": "Argentina",
+            "group": "J",
+            "position": 1,
+            "played": 3,
+            "w": 3,
+            "d": 0,
+            "l": 0,
+            "gf": 8,
+            "ga": 1,
+            "gd": 7,
+            "points": 9,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "3-0-0",
+              "w": 3,
+              "d": 0,
+              "l": 0,
+              "gf": 8,
+              "ga": 1,
+              "gd": 7,
+              "goals_per_game": 2.667,
+              "conceded_per_game": 0.333,
+              "clean_sheet_pct": 66.7,
+              "failed_to_score_pct": 0.0,
+              "btts_pct": 33.3,
+              "over15_pct": 100.0,
+              "over25_pct": 66.7,
+              "under25_pct": 33.3,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Cape Verde",
+            "team_id": "CPV",
+            "team_name_display": "Cape Verde",
+            "group": "H",
+            "position": 2,
+            "played": 3,
+            "w": 0,
+            "d": 3,
+            "l": 0,
+            "gf": 2,
+            "ga": 2,
+            "gd": 0,
+            "points": 3,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "0-3-0",
+              "w": 0,
+              "d": 3,
+              "l": 0,
+              "gf": 2,
+              "ga": 2,
+              "gd": 0,
+              "goals_per_game": 0.667,
+              "conceded_per_game": 0.667,
+              "clean_sheet_pct": 66.7,
+              "failed_to_score_pct": 66.7,
+              "btts_pct": 33.3,
+              "over15_pct": 33.3,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Argentina",
+            "team_id": "ARG",
+            "team_name_display": "Argentina",
+            "last5": "5-0-0",
+            "last10": "10-0-0",
+            "last20": "16-2-2",
+            "goals_per_game": 2.4,
+            "conceded_per_game": 0.4,
+            "clean_sheet_pct": 65.0,
+            "btts_pct": 30.0,
+            "over25_pct": 50.0,
+            "under25_pct": 50.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Cape Verde",
+            "team_id": "CPV",
+            "team_name_display": "Cape Verde",
+            "last5": "2-3-0",
+            "last10": "4-3-3",
+            "last20": "9-6-5",
+            "goals_per_game": 1.45,
+            "conceded_per_game": 0.8,
+            "clean_sheet_pct": 50.0,
+            "btts_pct": 40.0,
+            "over25_pct": 40.0,
+            "under25_pct": 60.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 0,
+            "draws": 0,
+            "team_b_wins": 0,
+            "team_a_goals": 0,
+            "team_b_goals": 0,
+            "note": "Nem találtam forrásolt korábbi A-válogatott Argentina–Cape Verde mérkőzést; Sofascore/FotMob csak a 2026-07-03-as jövőbeli meccsoldalt adta vissza."
+          },
+          "h2h_detail_level": "no_h2h_found_or_not_present_in_file",
+          "h2h_summary_total_count": 0,
+          "h2h_matches_listed_count": 0,
+          "no_h2h_found_for_calculation": true,
+          "calculation_note": "A fájlban nincs forrásolt korábbi A-válogatott H2H; számításnál 0 közvetlen H2H-ként kezelhető, de alacsony biztonsággal."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "teljes/részleges: FIFA Match Centre és hivatalos FIFA hospitality/suite oldal alapján M86, dátum, idő, venue ellenőrizve; stadionnév Hard Rock Stadium/Miami Stadium kettős megnevezéssel",
+          "ratings": "részleges: Elo és FIFA-rang elérhető; FIFA hivatalos country page pontszámot nem adta ki teljesen, ezért Sofascore pontszámot is használtam",
+          "group_stage": "részleges: eredmények és tabellák megvannak; aggregált xG/lövés/lap/szöglet nem teljes minden meccsre",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "teljesnek kezelt hiány: nincs talált korábbi A-válogatott H2H",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "részleges, de gépileg feldolgozható történeti adatréteg; odds és prediction nincs",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": []
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": true,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Argentina csoportforma: 3-0-0, 8-1 gól, 9 pont.",
+          "Cape Verde csoportforma: 0-3-0, 2-2 gól, 3 pont.",
+          "Argentina last20: 16-2-2, 2.4 rúgott / 0.4 kapott gól/meccs.",
+          "Cape Verde last20: 9-6-5, 1.45 rúgott / 0.8 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 526.",
+          "FIFA-rang különbség team_a - team_b: -66.",
+          "Pihenő: Argentina 6 nap, Cape Verde 7 nap; Cape Verde +1 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám időzónákkal részben frissítendő.",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Over 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Nem; számítási alap: Argentina BTTS last20 30.0%, Cape Verde BTTS last20 40.0%.",
+          "Védekezési irány: Argentina clean sheet group 66.7%, last20 65.0%; Cape Verde clean sheet group 66.7%, last20 50.0%.",
+          "1X2 alapirány: Argentina győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 8%.",
+          "Büntetők esélye óvatos becslés: 3%.",
+          "Pontos eredmény bizalom óvatos becslés: 26%.",
+          "Összesített predikciós bizalom óvatos becslés: 75%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Argentina: 3-0-0, 8-1; Cape Verde: 0-3-0, 2-2",
+        "last20_form": "Argentina: 16-2-2; Cape Verde: 9-6-5",
+        "goal_trend": "Over 2.5",
+        "defensive_trend": "Argentina CS last20 65.0%; Cape Verde CS last20 50.0%",
+        "elo_fifa_edge": "Elo diff: 526; FIFA rank diff: -66",
+        "h2h_direction": {
+          "team_a_wins": 0,
+          "draws": 0,
+          "team_b_wins": 0,
+          "team_a_goals": 0,
+          "team_b_goals": 0,
+          "note": "Nem találtam forrásolt korábbi A-válogatott Argentina–Cape Verde mérkőzést; Sofascore/FotMob csak a 2026-07-03-as jövőbeli meccsoldalt adta vissza."
+        },
+        "rest_location": "Cape Verde +1 naptári nap pihenőelőny a legutóbbi csoportmeccs dátuma alapján; pontos óraszám időzónákkal részben frissítendő",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Argentina a legerősebb favorit a 10 meccs között. A csoportban 9 pontot szerzett, 8 gólt rúgott és csak 1-et kapott. Cape Verde elsődleges esélye a meccs lassítása és az alacsony gólszám felé tolása lehet. Cape Verde csoportban 3 döntetlent játszott, tehát nehezen verhető, de támadásban kevésbé produktív. Argentina korai gól esetén simábbá teheti, késői gól esetén viszont underesebb lehet. A fordulási kockázat Cape Verdénél nagy, mert ha hátrányba kerül, az adatok alapján nehéz lehet tartani az argentin tempót.",
+        "likely_stronger_start": "Argentina",
+        "expected_match_openness": "nyíltabb / gólváltásos",
+        "decisive_factor_summary": "Argentina korai gól esetén simábbá teheti, késői gól esetén viszont underesebb lehet",
+        "in_game_turnaround_risk": "alacsony-közepes"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "Argentina győzelem",
+          "confidence_pct": 86
+        },
+        "safe_direction": {
+          "pick": "Argentina",
+          "code": "1"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Argentina vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Argentina"
+        },
+        "btts": {
+          "pick": "Nem"
+        },
+        "total_2_5": {
+          "pick": "Over 2.5",
+          "lean": "enyhe; főleg Argentina egyoldalú góltermelése miatt"
+        },
+        "qualifier": {
+          "pick": "Argentina"
+        },
+        "extra_time_chance_pct": 8,
+        "penalties_chance_pct": 3
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-0",
+          "winner": "Argentina",
+          "logic_type": "alapforgatókönyv",
+          "reason": "Argentina erős támadó- és védekező mutatói, valamint Cape Verde underes/döntetlenes profilja ezt támogatja."
+        },
+        {
+          "score": "3-0",
+          "winner": "Argentina",
+          "logic_type": "reális alternatíva",
+          "reason": "Az Elo +526 és a csoportbeli 8 rúgott gól alapján reális az egyoldalúbb kimenet is."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Cape Verde 60 percig meccsben tartja, és Argentina csak szűken vezet vagy döntetlen áll addig.",
+        "why_unexpected": "Argentina hatalmas favorit.",
+        "why_defensible": "Cape Verde csoportban 0 vereséggel, 3 döntetlennel és 66.7% clean sheettel jutott tovább.",
+        "risk_level": "közepes",
+        "confidence_pct": 21
+      },
+      "confidence": {
+        "base_outcome_pct": 86,
+        "goals_markets_pct": 61,
+        "correct_score_pct": 26,
+        "unexpected_tip_pct": 21,
+        "overall_prediction_pct": 75
+      },
+      "risks": [
+        "H2H nincs.",
+        "Cape Verde döntetlenes profilja lassíthatja a meccset.",
+        "Ha Argentina korán betalál, a 2.5 over sokkal erősebbé válik; ha nem, underes csapda lehet."
+      ],
+      "pwa": {
+        "tags": [
+          "strongest_favorite",
+          "btts_no_candidate",
+          "high_confidence",
+          "one_sided_score_candidate"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Argentina győzelem",
+            "confidence_pct": 86
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Over 2.5",
+            "confidence_pct": 61
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-0 / 3-0",
+            "confidence_pct": 26
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Cape Verde 60 percig meccsben tartja, és Argentina csak szűken vezet vagy döntetlen áll addig.",
+            "risk_level": "közepes",
+            "confidence_pct": 21
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 86,
+          "goals_confidence": 61,
+          "upset_risk_score": 10,
+          "extra_time_risk_score": 8,
+          "penalties_risk_score": 3
+        }
+      }
+    },
+    {
+      "match_id": "r32_m10_col_gha",
+      "match_no_chronological": 10,
+      "title": "Colombia vs Ghana",
+      "teams": {
+        "team_a": {
+          "id": "COL",
+          "name": "Colombia"
+        },
+        "team_b": {
+          "id": "GHA",
+          "name": "Ghana"
+        }
+      },
+      "fixture": {
+        "fifa_match_no": 87,
+        "date": "2026-07-03 local / 2026-07-04 Europe/Budapest",
+        "kickoff_local": "2026-07-03 20:30 America/Chicago (CDT)",
+        "kickoff_hungary": "2026-07-04 03:30 Europe/Budapest (CEST)",
+        "venue": "Kansas City Stadium / GEHA Field at Arrowhead Stadium",
+        "city": "Kansas City, Missouri / Kansas City host market",
+        "country": "United States",
+        "rest_days": {
+          "team_a": 6,
+          "team_b": 6,
+          "rest_advantage": "nincs érdemi naptári pihenőnap-előny; pontos óraszám és utazási részletek részben frissítendők"
+        }
+      },
+      "input_data_snapshot": {
+        "ratings": {
+          "team_a": {
+            "team": "Colombia",
+            "elo": 2004,
+            "elo_rank": 6,
+            "fifa_rank": 13,
+            "fifa_points": 1698.35
+          },
+          "team_b": {
+            "team": "Ghana",
+            "elo": 1575,
+            "elo_rank": 68,
+            "fifa_rank": null,
+            "fifa_points": null
+          },
+          "differences": {
+            "elo_difference_team_a_minus_team_b": 429,
+            "fifa_rank_difference_team_a_minus_team_b": null
+          }
+        },
+        "group_stage": {
+          "team_a": {
+            "team": "Colombia",
+            "team_id": "COL",
+            "team_name_display": "Colombia",
+            "group": "K",
+            "position": 1,
+            "played": 3,
+            "w": 2,
+            "d": 1,
+            "l": 0,
+            "gf": 4,
+            "ga": 1,
+            "gd": 3,
+            "points": 7,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "2-1-0",
+              "w": 2,
+              "d": 1,
+              "l": 0,
+              "gf": 4,
+              "ga": 1,
+              "gd": 3,
+              "goals_per_game": 1.333,
+              "conceded_per_game": 0.333,
+              "clean_sheet_pct": 66.7,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 33.3,
+              "over15_pct": 33.3,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "team_b": {
+            "team": "Ghana",
+            "team_id": "GHA",
+            "team_name_display": "Ghana",
+            "group": "L",
+            "position": 3,
+            "played": 3,
+            "w": 1,
+            "d": 1,
+            "l": 1,
+            "gf": 2,
+            "ga": 2,
+            "gd": 0,
+            "points": 4,
+            "calculated_group_form": {
+              "matches_counted": 3,
+              "form_wdl": "1-1-1",
+              "w": 1,
+              "d": 1,
+              "l": 1,
+              "gf": 2,
+              "ga": 2,
+              "gd": 0,
+              "goals_per_game": 0.667,
+              "conceded_per_game": 0.667,
+              "clean_sheet_pct": 66.7,
+              "failed_to_score_pct": 33.3,
+              "btts_pct": 33.3,
+              "over15_pct": 33.3,
+              "over25_pct": 33.3,
+              "under25_pct": 66.7,
+              "data_status": "calculated_from_structured_group_results"
+            }
+          },
+          "advanced_stats_note": null
+        },
+        "recent_form": {
+          "team_a": {
+            "team": "Colombia",
+            "team_id": "COL",
+            "team_name_display": "Colombia",
+            "last5": "4-1-0",
+            "last10": "6-2-2",
+            "last20": "10-5-5",
+            "goals_per_game": 1.95,
+            "conceded_per_game": 1.0,
+            "clean_sheet_pct": 45.0,
+            "btts_pct": 50.0,
+            "over25_pct": 65.0,
+            "under25_pct": 35.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          },
+          "team_b": {
+            "team": "Ghana",
+            "team_id": "GHA",
+            "team_name_display": "Ghana",
+            "last5": "1-2-2",
+            "last10": "2-2-6",
+            "last20": "7-4-9",
+            "goals_per_game": 1.4,
+            "conceded_per_game": 1.15,
+            "clean_sheet_pct": 45.0,
+            "btts_pct": 40.0,
+            "over25_pct": 50.0,
+            "under25_pct": 50.0,
+            "matches_counted": 20,
+            "data_status": "teljes_last20",
+            "method_note": "W-D-L a 11v11 Result mező alapján; gólatlagok, BTTS és over/under a megadott alap eredményből számolva, büntetőpárbaj zárójeles eredménye nélkül."
+          }
+        },
+        "head_to_head": {
+          "summary": {
+            "team_a_wins": 0,
+            "draws": 0,
+            "team_b_wins": 0,
+            "team_a_goals": 0,
+            "team_b_goals": 0
+          },
+          "h2h_detail_level": "no_h2h_found_or_not_present_in_file",
+          "h2h_summary_total_count": 0,
+          "h2h_matches_listed_count": 0,
+          "no_h2h_found_for_calculation": true,
+          "calculation_note": "A fájlban nincs forrásolt korábbi A-válogatott H2H; számításnál 0 közvetlen H2H-ként kezelhető, de alacsony biztonsággal."
+        },
+        "suspensions_confirmed": {
+          "team_a": [],
+          "team_b": [],
+          "checked_at": "2026-06-28T23:20:00+02:00",
+          "scope": "Round of 32 suspensions only; injuries are not listed here",
+          "official_complete_fifa_disciplinary_list_found": false,
+          "status_note": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam.",
+          "sources": [
+            {
+              "name": "Reuters – Extra amnesty means World Cup final heartbreak less likely in 2026",
+              "url": "https://www.reuters.com/sports/soccer/extra-amnesty-means-world-cup-final-heartbreak-less-likely-2026-2026-06-12/",
+              "used_for": [
+                "2026 World Cup yellow-card reset rule",
+                "red card automatic sanction context"
+              ]
+            },
+            {
+              "name": "Fantasy Football Scout – Who is suspended in the Round of 32?",
+              "url": "https://www.fantasyfootballscout.co.uk/2026/06/28/fantasy-fifa-world-cup-2026-who-is-suspended-in-the-round-of-32/",
+              "used_for": [
+                "public Round-of-32 suspended and returning-from-ban list; secondary source"
+              ]
+            },
+            {
+              "name": "Pan Africa Football – Egypt suffer midfielder suspension ahead of World Cup Round of 32",
+              "url": "https://panafricafootball.com/article/mohannad-lasheen-suspended-world-cup",
+              "used_for": [
+                "Mohannad/Mohanad Lasheen second-yellow suspension detail; secondary source"
+              ]
+            },
+            {
+              "name": "RotoWire – Mohanad Lasheen suspended for Round of 32",
+              "url": "https://www.rotowire.com/soccer/headlines/mohanad-lasheen-news-suspended-for-round-of-32-521287",
+              "used_for": [
+                "Mohanad Lasheen suspension cross-check; secondary source"
+              ]
+            }
+          ]
+        },
+        "data_quality": {
+          "match_meta": "részleges-teljes: FIFA keresési kivonat + Sky/Sofascore/Reuters alapján; FIFA oldal teljes HTML-kivonat nem kiolvasható",
+          "ratings": "részleges: Colombia teljes, Ghana Elo teljes, Ghana FIFA-rang/pont nem kiolvasható megbízhatóan a megnyitott forrásrészletből",
+          "group_stage": "részleges: eredmények és alaptábla megvan, haladó stat/xG/corners/cards teljes csoportösszeg hiányzik",
+          "recent_form": "frissítve: last20 forma 11v11 A-válogatott eredménysor alapján, ahol 2025-26 nem adott 20 meccset, a 2024-25-ös szezonból visszafelé pótolva; büntetők nélküli gólszámítással.",
+          "head_to_head": "részleges/hiányzik: nem találtam megbízható korábbi felnőtt H2H-listát",
+          "suspensions": "frissítve: R32 eltiltások külön mezőben; teljes hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható, pozitív eltiltás csak több forrásos publikus megerősítésnél szerepel.",
+          "overall": "közepes: historikus eredményréteg használható, haladó stat- és fegyelmi réteg hiányos",
+          "calculation_readiness": "jó historikus számítási alap; odds/Elo/ranking nem kötelező rétegként kezelve",
+          "group_stage_structuring": "csoportmeccs eredmények strukturált result_code/gól/BTTS/over/clean_sheet mezőkkel kiegészítve",
+          "competition_normalization": "last20 és group_stage competition_group/match_type/weight helper mezőkkel kiegészítve",
+          "missing_data_current_purpose": "csak PWA/számítás szempontból lényeges hiányok maradtak a missing_data alatt; eredeti lista missing_data_original mezőben"
+        },
+        "missing_data": []
+      },
+      "data_availability_check": {
+        "team_names": true,
+        "group_stage_form": true,
+        "last20_form": true,
+        "elo_available_team_a": true,
+        "elo_available_team_b": true,
+        "fifa_rank_available_team_a": true,
+        "fifa_rank_available_team_b": false,
+        "h2h_available_or_explicitly_marked": true,
+        "suspensions_field": true,
+        "data_quality_notes": true
+      },
+      "prediction_reasoning": {
+        "directly_readable_from_json": [
+          "Colombia csoportforma: 2-1-0, 4-1 gól, 7 pont.",
+          "Ghana csoportforma: 1-1-1, 2-2 gól, 4 pont.",
+          "Colombia last20: 10-5-5, 1.95 rúgott / 1.0 kapott gól/meccs.",
+          "Ghana last20: 7-4-9, 1.4 rúgott / 1.15 kapott gól/meccs.",
+          "Elo-különbség team_a - team_b: 429.",
+          "FIFA-rang különbség team_a - team_b: None.",
+          "Pihenő: Colombia 6 nap, Ghana 6 nap; nincs érdemi naptári pihenőnap-előny; pontos óraszám és utazási részletek részben frissítendők.",
+          "Eltiltások team_a: 0, team_b: 0."
+        ],
+        "calculated_conclusions": [
+          "Gólpiaci irány: Under 2.5; számítási alap: group under/over minták és last20 under/over százalékok.",
+          "BTTS irány: Nem; számítási alap: Colombia BTTS last20 50.0%, Ghana BTTS last20 40.0%.",
+          "Védekezési irány: Colombia clean sheet group 66.7%, last20 45.0%; Ghana clean sheet group 66.7%, last20 45.0%.",
+          "1X2 alapirány: Colombia győzelem; számítási alap: csoportforma + last20 + Elo/FIFA + H2H/pihenő, ahol elérhető."
+        ],
+        "cautious_estimates": [
+          "Hosszabbítás esélye óvatos becslés: 13%.",
+          "Büntetők esélye óvatos becslés: 5%.",
+          "Pontos eredmény bizalom óvatos becslés: 23%.",
+          "Összesített predikciós bizalom óvatos becslés: 68%."
+        ]
+      },
+      "short_formula": {
+        "group_form": "Colombia: 2-1-0, 4-1; Ghana: 1-1-1, 2-2",
+        "last20_form": "Colombia: 10-5-5; Ghana: 7-4-9",
+        "goal_trend": "Under 2.5",
+        "defensive_trend": "Colombia CS last20 45.0%; Ghana CS last20 45.0%",
+        "elo_fifa_edge": "Elo diff: 429; FIFA rank diff: None",
+        "h2h_direction": {
+          "team_a_wins": 0,
+          "draws": 0,
+          "team_b_wins": 0,
+          "team_a_goals": 0,
+          "team_b_goals": 0
+        },
+        "rest_location": "nincs érdemi naptári pihenőnap-előny; pontos óraszám és utazási részletek részben frissítendők",
+        "suspension_uncertainty": "A teljes, hivatalos FIFA fegyelmi lista nem volt gépileg kiolvasható. Pozitív eltiltást csak több friss publikus forrás alapján rögzítettem; hivatalos FIFA-match-preview találatot ehhez a 10 meccshez nem találtam."
+      },
+      "match_scenario": {
+        "most_likely_scenario_text": "Colombia egyértelműen erősebb történeti és csoportkörös alapot mutat. Az Elo-különbség nagyon nagy, Ghana last20 mérlege pedig negatív, 7-4-9. Colombia stabil győzelmi irány, de nem feltétlenül extrém gólzáporos, mert a csoportban mindkét csapat underesebb volt. Ghana védekezési csoportmutatója nem rossz, ezért a nagyon sima 3–0 nem alapforgatókönyv. Colombia kontrolláltan, kevés kockázattal nyerhet. A fordulási kockázat Ghana oldalán magasabb, főleg ha korán hátrányba kerül.",
+        "likely_stronger_start": "Colombia",
+        "expected_match_openness": "zártabb / kontrolláltabb",
+        "decisive_factor_summary": "Colombia kontrolláltan, kevés kockázattal nyerhet",
+        "in_game_turnaround_risk": "alacsony-közepes"
+      },
+      "predictions": {
+        "one_x_two": {
+          "pick": "1",
+          "label": "Colombia győzelem",
+          "confidence_pct": 78
+        },
+        "safe_direction": {
+          "pick": "Colombia nem kap ki",
+          "code": "1X"
+        },
+        "double_chance": {
+          "pick": "1X",
+          "label": "Colombia vagy döntetlen"
+        },
+        "dnb": {
+          "pick": "Colombia"
+        },
+        "btts": {
+          "pick": "Nem",
+          "lean": "inkább nem"
+        },
+        "total_2_5": {
+          "pick": "Under 2.5",
+          "lean": "enyhe"
+        },
+        "qualifier": {
+          "pick": "Colombia"
+        },
+        "extra_time_chance_pct": 13,
+        "penalties_chance_pct": 5
+      },
+      "correct_score_tips": [
+        {
+          "score": "2-0",
+          "winner": "Colombia",
+          "logic_type": "alapforgatókönyv",
+          "reason": "Colombia Elo-fölénye, csoportvédelme és Ghana negatív last20 mérlege ezt támogatja."
+        },
+        {
+          "score": "2-1",
+          "winner": "Colombia",
+          "logic_type": "reális alternatíva",
+          "reason": "Colombia last20-ban 1.00 gólt kap meccsenként, ezért Ghana egy gólja alternatívaként védhető."
+        }
+      ],
+      "unexpected_tip": {
+        "tip": "Ghana gólt szerez.",
+        "why_unexpected": "Colombia erős favorit, csoportban csak 1 gólt kapott.",
+        "why_defensible": "Colombia last20 BTTS 50%, Ghana last20 1.40 gólt rúg meccsenként.",
+        "risk_level": "közepes-magas",
+        "confidence_pct": 19
+      },
+      "confidence": {
+        "base_outcome_pct": 78,
+        "goals_markets_pct": 59,
+        "correct_score_pct": 23,
+        "unexpected_tip_pct": 19,
+        "overall_prediction_pct": 68
+      },
+      "risks": [
+        "Ghana FIFA-rang/FIFA-pont hiányos.",
+        "H2H nincs.",
+        "Colombia last20 over 2.5 aránya 65%, miközben a csoportmeccsei underesebbek voltak.",
+        "Ghana alacsony gólú csoportprofilja lassíthatja a meccset."
+      ],
+      "pwa": {
+        "tags": [
+          "stable_favorite",
+          "under_2_5_lean",
+          "btts_no_lean",
+          "data_gap_fifa_opponent",
+          "high_confidence"
+        ],
+        "cards": {
+          "primary_pick_card": {
+            "title": "Fő tipp",
+            "value": "Colombia győzelem",
+            "confidence_pct": 78
+          },
+          "goals_card": {
+            "title": "Gólirány",
+            "value": "Under 2.5",
+            "confidence_pct": 59
+          },
+          "score_card": {
+            "title": "Pontos eredmény",
+            "value": "2-0 / 2-1",
+            "confidence_pct": 23
+          },
+          "surprise_card": {
+            "title": "Váratlan tipp",
+            "value": "Ghana gólt szerez.",
+            "risk_level": "közepes-magas",
+            "confidence_pct": 19
+          }
+        },
+        "sort_scores": {
+          "base_confidence": 78,
+          "goals_confidence": 59,
+          "upset_risk_score": 10,
+          "extra_time_risk_score": 13,
+          "penalties_risk_score": 5
+        }
+      }
+    }
+  ],
+  "summaries": {
+    "top_predictions": {
+      "stable_1x2_directions": [
+        {
+          "rank": 1,
+          "match": "Argentina vs Cape Verde",
+          "pick": "Argentina győzelem"
+        },
+        {
+          "rank": 2,
+          "match": "England vs DR Congo",
+          "pick": "England győzelem"
+        },
+        {
+          "rank": 3,
+          "match": "Colombia vs Ghana",
+          "pick": "Colombia győzelem"
+        },
+        {
+          "rank": 4,
+          "match": "Spain vs Austria",
+          "pick": "Spain győzelem"
+        },
+        {
+          "rank": 5,
+          "match": "Switzerland vs Algeria",
+          "pick": "Switzerland győzelem"
+        },
+        {
+          "rank": 6,
+          "match": "Mexico vs Ecuador",
+          "pick": "Mexico győzelem"
+        },
+        {
+          "rank": 7,
+          "match": "United States vs Bosnia and Herzegovina",
+          "pick": "United States győzelem"
+        }
+      ],
+      "best_double_chance_directions": [
+        {
+          "rank": 1,
+          "match": "Argentina vs Cape Verde",
+          "pick": "1X"
+        },
+        {
+          "rank": 2,
+          "match": "England vs DR Congo",
+          "pick": "1X"
+        },
+        {
+          "rank": 3,
+          "match": "Colombia vs Ghana",
+          "pick": "1X"
+        },
+        {
+          "rank": 4,
+          "match": "Spain vs Austria",
+          "pick": "1X"
+        },
+        {
+          "rank": 5,
+          "match": "Mexico vs Ecuador",
+          "pick": "1X"
+        },
+        {
+          "rank": 6,
+          "match": "Switzerland vs Algeria",
+          "pick": "1X"
+        },
+        {
+          "rank": 7,
+          "match": "Portugal vs Croatia",
+          "pick": "1X"
+        },
+        {
+          "rank": 8,
+          "match": "Australia vs Egypt",
+          "pick": "1X"
+        }
+      ],
+      "most_likely_under_2_5": [
+        {
+          "rank": 1,
+          "match": "Australia vs Egypt"
+        },
+        {
+          "rank": 2,
+          "match": "Mexico vs Ecuador"
+        },
+        {
+          "rank": 3,
+          "match": "England vs DR Congo"
+        },
+        {
+          "rank": 4,
+          "match": "Colombia vs Ghana"
+        },
+        {
+          "rank": 5,
+          "match": "Spain vs Austria"
+        }
+      ],
+      "most_likely_over_2_5": [
+        {
+          "rank": 1,
+          "match": "Switzerland vs Algeria"
+        },
+        {
+          "rank": 2,
+          "match": "United States vs Bosnia and Herzegovina"
+        },
+        {
+          "rank": 3,
+          "match": "Belgium vs Senegal"
+        },
+        {
+          "rank": 4,
+          "match": "Portugal vs Croatia"
+        },
+        {
+          "rank": 5,
+          "match": "Argentina vs Cape Verde",
+          "note": "főleg ha Argentina korán betalál"
+        }
+      ],
+      "most_likely_btts_yes": [
+        {
+          "rank": 1,
+          "match": "United States vs Bosnia and Herzegovina"
+        },
+        {
+          "rank": 2,
+          "match": "Switzerland vs Algeria"
+        },
+        {
+          "rank": 3,
+          "match": "Belgium vs Senegal"
+        },
+        {
+          "rank": 4,
+          "match": "Portugal vs Croatia"
+        },
+        {
+          "rank": 5,
+          "match": "Spain vs Austria",
+          "note": "csak közepes bizalommal"
+        }
+      ],
+      "most_likely_btts_no": [
+        {
+          "rank": 1,
+          "match": "Argentina vs Cape Verde"
+        },
+        {
+          "rank": 2,
+          "match": "England vs DR Congo"
+        },
+        {
+          "rank": 3,
+          "match": "Mexico vs Ecuador"
+        },
+        {
+          "rank": 4,
+          "match": "Colombia vs Ghana"
+        },
+        {
+          "rank": 5,
+          "match": "Australia vs Egypt"
+        }
+      ],
+      "biggest_upset_risks": [
+        {
+          "rank": 1,
+          "match": "Australia vs Egypt",
+          "reason": "eleve kiegyenlített"
+        },
+        {
+          "rank": 2,
+          "match": "Belgium vs Senegal",
+          "reason": "Senegal támadóadatai erősek"
+        },
+        {
+          "rank": 3,
+          "match": "Portugal vs Croatia",
+          "reason": "Croatia erős és versenyképes"
+        },
+        {
+          "rank": 4,
+          "match": "Switzerland vs Algeria",
+          "reason": "Algeria last20 formája nagyon jó"
+        },
+        {
+          "rank": 5,
+          "match": "United States vs Bosnia and Herzegovina",
+          "reason": "USA védekezési varianciája magas"
+        }
+      ],
+      "most_uncertain_matches": [
+        {
+          "rank": 1,
+          "match": "Australia vs Egypt"
+        },
+        {
+          "rank": 2,
+          "match": "Belgium vs Senegal"
+        },
+        {
+          "rank": 3,
+          "match": "Portugal vs Croatia"
+        },
+        {
+          "rank": 4,
+          "match": "United States vs Bosnia and Herzegovina"
+        },
+        {
+          "rank": 5,
+          "match": "Switzerland vs Algeria"
+        }
+      ],
+      "best_historical_data_quality_matches": [
+        {
+          "rank": 1,
+          "match": "Mexico vs Ecuador"
+        },
+        {
+          "rank": 2,
+          "match": "Switzerland vs Algeria"
+        },
+        {
+          "rank": 3,
+          "match": "United States vs Bosnia and Herzegovina"
+        },
+        {
+          "rank": 4,
+          "match": "Australia vs Egypt"
+        },
+        {
+          "rank": 5,
+          "match": "Argentina vs Cape Verde"
+        }
+      ],
+      "weakest_data_quality_matches": [
+        {
+          "rank": 1,
+          "match": "Colombia vs Ghana",
+          "reason": "Ghana FIFA-réteg és H2H gyenge"
+        },
+        {
+          "rank": 2,
+          "match": "Spain vs Austria",
+          "reason": "Austria Elo hiányzik, H2H csak summary"
+        },
+        {
+          "rank": 3,
+          "match": "England vs DR Congo",
+          "reason": "H2H teljes archívum nem igazolt"
+        },
+        {
+          "rank": 4,
+          "match": "Belgium vs Senegal",
+          "reason": "H2H gyenge"
+        },
+        {
+          "rank": 5,
+          "match": "Portugal vs Croatia",
+          "reason": "H2H részleges/mismatch jelzésű"
+        }
+      ]
+    },
+    "correct_score_summary": [
+      {
+        "match": "Mexico vs Ecuador",
+        "first_correct_score": "1-0",
+        "second_correct_score": "2-0",
+        "short_reason": "Mexico clean sheet sorához és Ecuador underes last20 profiljához illeszkedik.; Mexico csoportkörös támadóhatékonyságát veszi erősebben figyelembe, de továbbra is Ecuador gól nélküli kimenetével számol."
+      },
+      {
+        "match": "England vs DR Congo",
+        "first_correct_score": "2-0",
+        "second_correct_score": "1-0",
+        "short_reason": "England erős támadóátlaga és 75%-os last20 clean sheet mutatója ezt támogatja.; DR Congo underes last20 mintája és korrekt védekezési mutatói miatt reális a szűkebb különbség."
+      },
+      {
+        "match": "Belgium vs Senegal",
+        "first_correct_score": "2-1",
+        "second_correct_score": "1-1",
+        "short_reason": "Belgium enyhe erősségi előnye és mindkét csapat góltrendje ezt támogatja.; Senegal támadóereje és Belgium döntetlenes csoportmintája miatt reális alternatíva a hosszabbításos meccskép."
+      },
+      {
+        "match": "United States vs Bosnia and Herzegovina",
+        "first_correct_score": "2-1",
+        "second_correct_score": "2-2",
+        "short_reason": "USA erősségi előnye mellett mindkét csapat BTTS-mintája erős.; Bosnia gólképessége és az USA magas kapottgól-átlaga miatt reális alternatív hosszabbításos forgatókönyv."
+      },
+      {
+        "match": "Spain vs Austria",
+        "first_correct_score": "2-0",
+        "second_correct_score": "2-1",
+        "short_reason": "Spain 0 kapott gólos csoportköre és Austria csoportbeli védekezési sebezhetősége ezt támogatja.; Austria last20 támadóátlaga 2.40, ezért reális alternatíva, hogy megtöri Spain clean sheet sorát."
+      },
+      {
+        "match": "Portugal vs Croatia",
+        "first_correct_score": "2-1",
+        "second_correct_score": "1-1",
+        "short_reason": "Portugal enyhe erősségi előnye és mindkét csapat BTTS/over mintája ezt támogatja.; Croatia versenyképes last20 formája és Portugal döntetlenes csoportmintája miatt reális alternatíva."
+      },
+      {
+        "match": "Switzerland vs Algeria",
+        "first_correct_score": "2-1",
+        "second_correct_score": "2-2",
+        "short_reason": "Switzerland előnyei mellett Algeria gólszerzése is erősen védhető.; Algeria last20 támadóereje és Switzerland magas BTTS-mintája miatt reális, nyílt alternatíva."
+      },
+      {
+        "match": "Australia vs Egypt",
+        "first_correct_score": "1-1",
+        "second_correct_score": "1-0",
+        "short_reason": "Egypt csoportbeli BTTS-mintája és a kiegyenlített erőviszony ezt támogatja.; Australia jobb védekezési csoportadata, enyhe Elo-előnye és Egypt eltiltása miatt reális alternatíva."
+      },
+      {
+        "match": "Argentina vs Cape Verde",
+        "first_correct_score": "2-0",
+        "second_correct_score": "3-0",
+        "short_reason": "Argentina erős támadó- és védekező mutatói, valamint Cape Verde underes/döntetlenes profilja ezt támogatja.; Az Elo +526 és a csoportbeli 8 rúgott gól alapján reális az egyoldalúbb kimenet is."
+      },
+      {
+        "match": "Colombia vs Ghana",
+        "first_correct_score": "2-0",
+        "second_correct_score": "2-1",
+        "short_reason": "Colombia Elo-fölénye, csoportvédelme és Ghana negatív last20 mérlege ezt támogatja.; Colombia last20-ban 1.00 gólt kap meccsenként, ezért Ghana egy gólja alternatívaként védhető."
+      }
+    ],
+    "unexpected_tips_summary": [
+      {
+        "match": "Mexico vs Ecuador",
+        "unexpected_tip": "Ecuador rendes játékidőben döntetlenre menti a meccset.",
+        "why_defensible": "Ecuador last20 mérlege 8-11-1, vagyis nagyon sok döntetlen; kapott gólátlaga csak 0.40.",
+        "risk_level": "közepes"
+      },
+      {
+        "match": "England vs DR Congo",
+        "unexpected_tip": "Félidőben döntetlen, végül England győzelem.",
+        "why_defensible": "DR Congo last20 under 2.5 aránya 70%, England csoportban is 66.7% under 2.5 mintát hozott.",
+        "risk_level": "közepes"
+      },
+      {
+        "match": "Belgium vs Senegal",
+        "unexpected_tip": "Senegal rendes játékidőben nem kap ki.",
+        "why_defensible": "Senegal last20-ban 13 győzelmet hozott, 2.10 gólt rúg meccsenként, és a csoportban 8 gólt szerzett.",
+        "risk_level": "közepes-magas"
+      },
+      {
+        "match": "United States vs Bosnia and Herzegovina",
+        "unexpected_tip": "Bosnia rendes játékidőben nem kap ki.",
+        "why_defensible": "Bosnia last20-ban 9-6-5, BTTS 70%, USA clean sheet csak 20%.",
+        "risk_level": "magas"
+      },
+      {
+        "match": "Spain vs Austria",
+        "unexpected_tip": "Austria gólt szerez.",
+        "why_defensible": "Austria last20-ban 2.40 gólt rúg meccsenként, csoportban 6 gólt szerzett.",
+        "risk_level": "közepes"
+      },
+      {
+        "match": "Portugal vs Croatia",
+        "unexpected_tip": "Hosszabbítás.",
+        "why_defensible": "Mindkét csapat erős last20 mérleggel jön, Portugal 6 döntetlen, Croatia 3 döntetlen a last20-ban; Croatia 6 pontos csoportot hozott.",
+        "risk_level": "közepes"
+      },
+      {
+        "match": "Switzerland vs Algeria",
+        "unexpected_tip": "Algeria legalább 2 gólt szerez.",
+        "why_defensible": "Algeria last20-ban 2.15 gólt rúg meccsenként, Switzerland csoportban minden meccsen kapott gólt.",
+        "risk_level": "magas"
+      },
+      {
+        "match": "Australia vs Egypt",
+        "unexpected_tip": "0–0 rendes játékidőben, büntetők felé sodródó meccs.",
+        "why_defensible": "Australia csoportban 100% under 2.5 és 0% BTTS, last20-ban mindkét csapat kapottgól-átlaga 1 alatt van.",
+        "risk_level": "közepes"
+      },
+      {
+        "match": "Argentina vs Cape Verde",
+        "unexpected_tip": "Cape Verde 60 percig meccsben tartja, és Argentina csak szűken vezet vagy döntetlen áll addig.",
+        "why_defensible": "Cape Verde csoportban 0 vereséggel, 3 döntetlennel és 66.7% clean sheettel jutott tovább.",
+        "risk_level": "közepes"
+      },
+      {
+        "match": "Colombia vs Ghana",
+        "unexpected_tip": "Ghana gólt szerez.",
+        "why_defensible": "Colombia last20 BTTS 50%, Ghana last20 1.40 gólt rúg meccsenként.",
+        "risk_level": "közepes-magas"
+      }
+    ]
+  },
+  "closing_note": [
+    "Ez nem biztos eredmény, hanem történeti adatokból készült valószínűségi predikció.",
+    "Nem szerepel benne olyan adat, amely nincs a JSON-ban.",
+    "Ahol a következtetés gyenge vagy hiányos adatból jön, ott az adatbizonytalanság külön jelölve van.",
+    "A pontos végeredmények és a váratlan tippek természetüknél fogva alacsonyabb bizalmúak, ezért ezeket mindig óvatosan kell kezelni."
+  ]
+}

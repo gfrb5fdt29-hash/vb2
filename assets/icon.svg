@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Minimalista foci ikon">
+  <defs>
+    <radialGradient id="bg" cx="28%" cy="18%" r="82%">
+      <stop offset="0" stop-color="#252b38"/>
+      <stop offset="0.52" stop-color="#090b12"/>
+      <stop offset="1" stop-color="#030408"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="94" y1="70" x2="418" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd48a"/>
+      <stop offset="0.52" stop-color="#f0ad4e"/>
+      <stop offset="1" stop-color="#ff7a2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="152" fill="none" stroke="url(#gold)" stroke-width="18" opacity=".95"/>
+  <path d="M256 153l81 59-31 96h-100l-31-96 81-59z" fill="none" stroke="url(#gold)" stroke-width="17" stroke-linejoin="round"/>
+  <path d="M175 212l-50-28M337 212l50-28M206 308l-35 55M306 308l35 55" fill="none" stroke="#ffe2aa" stroke-width="13" stroke-linecap="round" opacity=".78"/>
+  <circle cx="256" cy="256" r="21" fill="#ffd48a" opacity=".96"/>
+</svg>
