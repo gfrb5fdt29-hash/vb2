@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="VB predikciók">
-  <meta name="description" content="VB 2026 Round of 32 predikciós PWA – magyar, offline, iPhone-ra optimalizált.">
+  <meta name="description" content="VB 2026 predikciós PWA – magyar, offline, iPhone-ra optimalizált.">
   <title>VB 2026 predikciók</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
@@ -22,24 +22,18 @@
       <div class="brand-row">
         <img class="brand-icon" src="./assets/icon.svg" width="40" height="40" alt="">
         <div>
-          <p class="eyebrow">Round of 32</p>
+          <p class="eyebrow">Legjobb 32</p>
           <h1 id="appTitle">VB 2026 predikciók</h1>
         </div>
       </div>
       <p class="subtitle">Következő 10 meccs – minimalista áttekintő</p>
-      <div class="status-pill" id="loadStatus" aria-live="polite">Adatok betöltése…</div>
     </header>
 
     <section class="view is-active" id="matchesView" aria-label="Meccsek">
-      <section class="summary-strip" id="summaryStrip" aria-label="Rövid összefoglaló">
-        <div class="summary-skeleton"></div>
-        <div class="summary-skeleton short"></div>
-      </section>
-
       <section class="section-head">
         <div>
           <h2>Meccsek</h2>
-          <p>Időrendben, egyenrangú kártyákkal.</p>
+          <p>Időrendben.</p>
         </div>
       </section>
 
@@ -63,7 +57,7 @@
         <div>
           <p class="eyebrow">Áttekintés</p>
           <h2>Kockázat</h2>
-          <p>Hosszabbítás, büntetők, váratlan kimenetel és alacsonyabb bizalom.</p>
+          <p>Hosszabbítás, büntetők, váratlan kimenetel és alacsonyabb predikciós esély.</p>
         </div>
       </section>
       <div class="risk-grid" id="riskGrid"></div>

@@ -1,6 +1,17 @@
 # VB 2026 predikciók – minimalista iPhone PWA
 
-Ez egy statikus, magyar nyelvű, iPhone-ra optimalizált PWA a FIFA World Cup 2026 Round of 32 következő 10 meccsének predikciós áttekintéséhez.
+Ez egy statikus, magyar nyelvű, iPhone-ra optimalizált PWA a FIFA World Cup 2026 legjobb 32 közötti következő 10 meccsének predikciós áttekintéséhez.
+
+## Frissített változat
+
+Ebben a verzióban:
+
+- a részletes kártya X gombbal, háttérre koppintással és lefele legyintéssel is bezárható;
+- az országnevek magyar névvel jelennek meg az appban;
+- a főoldal egyszerűbb, nincs betöltési státusz és nincs 4 nagy infódoboz;
+- a meccskártyák nincsenek számozva;
+- a százalékok egyértelműen „Esély” jelöléssel jelennek meg;
+- az adatalap rövidebb és tisztább.
 
 ## GitHub Pages feltöltés
 
